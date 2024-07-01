@@ -1,10 +1,6 @@
 ---
-let eventTitle = "Event Title";
-let artistPhoto = "/images/artist.jpg";
-let photoCaption = "Photo Caption";
-let artistName = "Artist Name";
-let FooterLinkButton
-let eventDescription = "Artist Description";
+import FooterLinkButton from "./FooterLinkButton.astro";
+const { eventTitle, artistPhoto, photoCaption, eventDescription } = Astro.props;
 ---
 
 <header>
@@ -15,5 +11,5 @@ let eventDescription = "Artist Description";
   <p>
     {eventDescription}
   </p>
-
+  <FooterLinkButton href="/events" text="Back to Events" />
 </header>

@@ -25,13 +25,8 @@
   --accentDark: #dea128;
 }
 
-html,
-body {
-  height: 100%;
-  background-color: var(--primary100);
-}
-
 html {
+  height: 100%;
   font-size: 16px;
   font-family: system-ui, sans-serif;
   background: var(--primary80);
@@ -44,6 +39,8 @@ code {
 }
 
 body {
+  height: 100%;
+  background-color: var(--primary100);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }

@@ -1,0 +1,29 @@
+---
+const { href, text } = Astro.props
+---
+
+<button class="footer-link-button">
+  <a
+    href={
+      href
+    }
+  >
+    {text}
+  </a>
+</button>
+
+<style>
+  .footer-link-button {
+    background-color: var(--primary30);
+    color: var(--accent-dark);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .footer-link-button:hover {
+    background-color: var(--primary50);
+  }
+</style>
