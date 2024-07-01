@@ -1,0 +1,17 @@
+---
+import Social from "./Social.astro"
+---
+
+<footer>
+  <Social platform="facebook" username="heliamusiccollective" />
+  <Social platform="instagram" username="heliamusiccollective" />
+  <Social platform="youtube" username="channel/UCAO6CEqJ4NBG-HGXXp8BH3w" />
+  <p id="copyright">© Helia Music Collective</p>
+</footer>
+
+<script>
+  const copyright = document.getElementById('copyright');
+  if (copyright) {
+      copyright.innerHTML = `Copyright ©${new Date().getFullYear()} Helia Music Collective`;
+  }
+</script>

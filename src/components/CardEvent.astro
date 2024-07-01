@@ -1,15 +1,23 @@
 ---
 import FooterLinkButton from "./FooterLinkButton.astro";
+
+interface Props {
+  eventTitle: string;
+  artistPhoto?: string;
+  photoCaption: string;
+  eventDescription: string;
+}
+
 const { eventTitle, artistPhoto, photoCaption, eventDescription } = Astro.props;
 ---
 
-<header>
+<div>
   <h1>
     {eventTitle}
   </h1>
-  <img src={artistPhoto} alt={photoCaption} />
+  {artistPhoto && <img src={artistPhoto} alt={photoCaption} />}
   <p>
     {eventDescription}
   </p>
   <FooterLinkButton href="/events" text="Back to Events" />
-</header>
+</div>

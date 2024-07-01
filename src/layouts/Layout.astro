@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
-import NameHeader from '../components/NameHeader.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 
 interface Props {
 	title: string;
@@ -24,13 +25,12 @@ const { title } = Astro.props;
       <div
         class="header-div"
       >
-        <NameHeader>
-        <!-- <NavBar client:load/> -->
+        <Header>
       </div>
         <main class="main-element">
           <slot />
         </main>
-        <!-- <Footer /> -->
+        <Footer>
     </div>
 	</body>
 </html>

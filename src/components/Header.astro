@@ -1,5 +1,5 @@
 ---
-/* Header for all pages */
+import Navigation from "./Navigation.astro"
 ---
 
 <header>
@@ -8,16 +8,19 @@
   >
     Helia Music Collective
   </h1>
+  <nav>
+    <Navigation />
+  </nav>
 </header>
 
 <style>
-  name-header {
+  .name-header {
     font-weight: 500;
     display: flex;
     justify-content: space-around;
     text-transform: uppercase;
     padding: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     letter-spacing: 0.1em;
     font-size: 3rem;
     text-align: center;
