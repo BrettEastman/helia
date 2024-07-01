@@ -1,0 +1,59 @@
+---
+import '../styles/global.css';
+import NameHeader from '../components/NameHeader.astro';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Helia is a New Music collective co-founded by Julie Barwick and Emma Logan" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<div class="outer-screen">
+      <div
+        class="header-div"
+      >
+        <NameHeader>
+        <!-- <NavBar client:load/> -->
+      </div>
+        <main class="main-element">
+          <slot />
+        </main>
+        <!-- <Footer /> -->
+    </div>
+	</body>
+</html>
+
+<style>
+	main-element {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-grow: 1;
+	}
+	outer-screen {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+		align-items: center;
+	}
+	header-div {
+		border-bottom: 2px solid;
+		background-color: #e5e7eb;
+		margin-bottom: 2rem;
+		border-color: var(--primary30);
+		padding-top: 10px;
+		z-index: 50;
+	}
+</style>

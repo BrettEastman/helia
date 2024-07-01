@@ -1,0 +1,80 @@
+/* Global CSS Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+:root {
+  --primary10: #0d0e0b;
+  --primary20: #2b2b2b;
+  --primary30: #696969;
+  --primary40: #848484;
+  --primary50: #a0a0a0;
+  --primary60: #b7b8b6;
+  --primary70: #c9cac8;
+  --primary80: #eeeeee;
+  --primary90: #fcfcfc;
+  --primary100: #ffffff;
+  --accentLight: #e8bf4a;
+  --accentDark: #dea128;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--primary100);
+}
+
+html {
+  font-size: 16px;
+  font-family: system-ui, sans-serif;
+  background: var(--primary80);
+  background-size: 224px;
+}
+
+code {
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
