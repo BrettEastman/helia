@@ -23,24 +23,29 @@
   --primary100: #ffffff;
   --accentLight: #e8bf4a;
   --accentDark: #dea128;
+  --logoAccent: #a9dbc9;
+  --navText: #d0d0d0;
+  --subtitleText: #333333;
+  --icon: #b9b9b9;
+  --titleBrown: #6c411e;
 }
 
 html {
   height: 100%;
   font-size: 16px;
   font-family: system-ui, sans-serif;
-  background: var(--primary80);
+  background: var(--primary100);
   background-size: 224px;
 }
 
-code {
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
+/* code {
+  font-family: Raleway, Montserrat, Menlo, Monaco, Lucida Console,
+    Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,
+    monospace;
+} */
 
 body {
   height: 100%;
-  background-color: var(--primary100);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -78,7 +83,7 @@ h6 {
 
 /* nav styles */
 .hamburger {
-  padding-right: 20px;
+  padding: 20px;
   cursor: pointer;
 }
 
@@ -87,35 +92,16 @@ h6 {
   width: 40px;
   height: 5px;
   margin-bottom: 10px;
-  background-color: #ff9776;
+  background-color: var(--navText);
 }
 
-.nav-links {
-  width: 100%;
-  top: 5rem;
-  left: 48px;
-  background-color: #ff9776;
-  display: none;
-  margin: 0;
+html.dark {
+  background-color: var(--primary20);
+  color: var(--primary80);
 }
 
-.nav-links a {
-  display: block;
-  text-align: center;
-  padding: 10px 0;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.nav-links a:hover,
-a:focus {
-  background-color: #ff9776;
-}
-
-.expanded {
-  display: unset;
+.dark .nav-links a {
+  color: var(--primary100);
 }
 
 @media screen and (min-width: 636px) {

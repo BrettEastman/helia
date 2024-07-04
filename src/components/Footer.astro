@@ -3,9 +3,11 @@ import Social from "./Social.astro"
 ---
 
 <footer>
-  <Social platform="facebook" username="heliamusiccollective" />
-  <Social platform="instagram" username="heliamusiccollective" />
-  <Social platform="youtube" username="channel/UCAO6CEqJ4NBG-HGXXp8BH3w" />
+  <div>
+    <Social platform="facebook" username="heliamusiccollective" />
+    <Social platform="instagram" username="heliamusiccollective" />
+    <Social platform="youtube" username="channel/UCAO6CEqJ4NBG-HGXXp8BH3w" />
+  </div>
   <p id="copyright">© Helia Music Collective</p>
 </footer>
 
@@ -15,3 +17,16 @@ import Social from "./Social.astro"
       copyright.innerHTML = `Copyright ©${new Date().getFullYear()} Helia Music Collective`;
   }
 </script>
+
+<style>
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--accent-dark);
+    color: var(--primary30);
+    text-align: center;
+  }
+</style>

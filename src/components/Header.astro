@@ -1,14 +1,16 @@
 ---
 import Navigation from "./Navigation.astro"
 import Hamburger from "./Hamburger.astro"
+import ThemeIcon from "./ThemeIcon.astro"
 ---
 
 <header>
-  <h1
-    class="name-header"
-  >
-    Helia Music Collective
-  </h1>
+  <div class="name-header">
+    <h1>
+      Helia Music Collective
+    </h1>
+    <ThemeIcon />
+  </div>
   <nav>
     <Hamburger />
     <Navigation />
@@ -17,19 +19,19 @@ import Hamburger from "./Hamburger.astro"
 
 <style>
   .name-header {
-    font-weight: 500;
+    font-weight: 300;
     display: flex;
     justify-content: space-around;
     text-transform: uppercase;
     padding: 1rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     letter-spacing: 0.1em;
-    font-size: 3rem;
+    font-size: 1rem;
     text-align: center;
     align-items: center;
     color: var(--primary30);
     @media (min-width: 768px) {
-      font-size: 3.75rem;
+      font-size: 2rem;
     }
   }
 </style>

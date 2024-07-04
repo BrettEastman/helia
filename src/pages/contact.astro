@@ -8,7 +8,9 @@ import imageData from "../images/Julie&Emma-LowQ.jpg";
 <Layout title="Contact">
   <main>
     <Image width={750} alt={'Picture of Julie and Emma'} src={imageData} />
-    <h1>Contact Us</h1>
+    <div class="contact-title">
+      <h2>Contact Us</h2>
+    </div>
     <h6>Location</h6>
     <p>
       We are based in San Francisco.
@@ -19,3 +21,17 @@ import imageData from "../images/Julie&Emma-LowQ.jpg";
     </p>
   <main>
 </Layout>
+
+<style>
+  .contact-title {
+    text-align: center;
+  }
+  h6 {
+    color: var(--primary30);
+    font-size: 2rem;
+  }
+  p {
+    color: var(--primary50);
+    font-size: 1.5rem;
+  }
+</style>
