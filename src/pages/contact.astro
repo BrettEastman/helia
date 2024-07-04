@@ -8,8 +8,8 @@ import imageData from "../images/Julie&Emma-LowQ.jpg";
 <Layout title="Contact">
   <main>
     <Image width={750} alt={'Picture of Julie and Emma'} src={imageData} />
-    <div class="contact-title">
-      <h2>Contact Us</h2>
+    <div>
+      <h4 class="contact-title">Contact Us</h4>
     </div>
     <h6>Location</h6>
     <p>
@@ -23,15 +23,28 @@ import imageData from "../images/Julie&Emma-LowQ.jpg";
 </Layout>
 
 <style>
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
   .contact-title {
     text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color: var(--subtitleText);
   }
   h6 {
     color: var(--primary30);
-    font-size: 2rem;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 14px 0px;
   }
   p {
     color: var(--primary50);
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-weight: 300;
   }
 </style>

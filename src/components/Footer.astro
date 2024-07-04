@@ -8,13 +8,13 @@ import Social from "./Social.astro"
     <Social platform="instagram" username="heliamusiccollective" />
     <Social platform="youtube" username="channel/UCAO6CEqJ4NBG-HGXXp8BH3w" />
   </div>
-  <p id="copyright">© Helia Music Collective</p>
+  <p id="copyright">© <span>Helia Music Collective</span></p>
 </footer>
 
 <script>
   const copyright = document.getElementById('copyright');
   if (copyright) {
-      copyright.innerHTML = `Copyright ©${new Date().getFullYear()} Helia Music Collective`;
+      copyright.innerHTML = `Copyright ©${new Date().getFullYear()} <span>Helia Music Collective</span>`;
   }
 </script>
 
@@ -24,8 +24,16 @@ import Social from "./Social.astro"
     flex-direction: column;
     justify-content: space-around;
     gap: 1rem;
-    padding: 2rem;
+    padding: 5rem 0;
+    width: 100%;
     color: var(--primary30);
+    background-color: var(--footerBackground);
     text-align: center;
+  }
+  #copyright {
+    font-size: 0.8rem;
+  }
+  span {
+    color: var(--accentLight);
   }
 </style>
