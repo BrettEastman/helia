@@ -1,5 +1,4 @@
 ---
-import '@fontsource-variable/montserrat';
 ---
 
 <div class="nav-links">
@@ -14,26 +13,27 @@ import '@fontsource-variable/montserrat';
 <style>
   .nav-links {
     width: 100%;
-    font-family: 'Montserrat', sans-serif;
-    top: 5rem;
-    left: 48px;
+    font-family: 'Montserrat Variable', sans-serif;
+    font-weight: 500;
     background-color: var(--logoAccent);
     display: none;
     margin: 0;
   }
 
   .nav-links a {
-    display: block;
     text-align: center;
+    color: var(--navText);
     padding: 10px 0;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 14px;
     text-transform: uppercase;
+    transition-duration: 300ms;
   }
 
   .nav-links a:hover,
   .nav-links a:focus {
-    background-color: var(--logoAccent);
+    background-color: var(--primary80);
+    color: var(--accentDark);
   }
 
   .expanded {
@@ -42,9 +42,8 @@ import '@fontsource-variable/montserrat';
 
   @media screen and (min-width: 636px) {
     .nav-links {
-      margin-left: 5em;
-      display: block;
-      position: static;
+      display: flex;
+      justify-content: space-around;
       width: auto;
       background: none;
     }
