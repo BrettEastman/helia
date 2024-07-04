@@ -8,9 +8,10 @@ import julieEmmaPath from "../images/Julie&Emma-LowQ-path.jpg";
 <Layout title="Helia Music Collective">
 	<main>
 		<section class="hero">
-			<Image width={1600} height={450} alt={'Background ambient colors'} src={backgroundAmbience} />
+			<Image width={1600} height={400} alt={'Background ambient colors'} src={backgroundAmbience} />
 			<div class="inner-hero">
 				<p>Helia Music Collective supports the creative endeavors of women in music throughout the San Francisco Bay Area.</p>
+				<a href="/about">About us</a>
 				<Image width={898} height={599} alt={'Julie and Emma standing on a path, with the sun'} src={julieEmmaPath}/>
 
 			</div>
@@ -43,5 +44,18 @@ import julieEmmaPath from "../images/Julie&Emma-LowQ-path.jpg";
 		color: var(--primary30);
 		padding: 3rem;
 		text-align: center;
+	}
+	a {
+    text-align: center;
+    color: var(--primary100);
+		font-family: 'Lato', sans-serif;
+		font-weight: 400;
+		letter-spacing: 0.1em;
+		background-color: var(--primary20);
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition-duration: 300ms;
 	}
 </style>

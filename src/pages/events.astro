@@ -1,11 +1,32 @@
 ---
-import Layout from '../layouts/Layout.astro'
-const allPosts = await Astro.glob('./posts/*.md');
+import events from '../data/events'
+import Layout from "../layouts/Layout.astro";
+import CardEvent from '../components/CardEvent.astro';
 const pageTitle = "Events";
 ---
 <Layout title={pageTitle}>
   <h2>Past Events</h2>
-  <ul>
-    {allPosts.map((post) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
-  </ul>
+  <div>
+    {events.map((event) => (
+      <div>
+        <CardEvent
+          eventTitle={event.title}
+          concertDate={event.concertDate}
+          venue={event.venue}
+          venueAddress={event.venueAddress}
+          city={event.city}
+          eventDescription={event.description}
+        />
+      </div>
+    ))}
+  </div>
 </Layout>
+
+<style>
+  h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+</style>

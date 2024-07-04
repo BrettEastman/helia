@@ -3,21 +3,51 @@ import FooterLinkButton from "./FooterLinkButton.astro";
 
 interface Props {
   eventTitle: string;
+  concertDate: string;
+  venue: string;
+  venueAddress: string;
+  city: string;
   artistPhoto?: string;
-  photoCaption: string;
+  photoCaption?: string;
   eventDescription: string;
 }
 
-const { eventTitle, artistPhoto, photoCaption, eventDescription } = Astro.props;
+const { eventTitle, concertDate, venue, venueAddress, city, artistPhoto, photoCaption, eventDescription } = Astro.props;
 ---
 
 <div>
-  <h1>
+  <h3>
     {eventTitle}
-  </h1>
+  </h3>
+  <p class="concert-date">{concertDate}</p>
+  <div class="location">
+    <p>{venue}</p>
+    <p>{venueAddress}</p>
+    <p>{city}</p>
+  </div>
   {artistPhoto && <img src={artistPhoto} alt={photoCaption} />}
-  <p>
+  <p class="description">
     {eventDescription}
   </p>
-  <FooterLinkButton href="/events" text="Back to Events" />
 </div>
+
+<style>
+  h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+  .concert-date {
+    font-family: 'Montserrat Variable', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .location {
+    margin-bottom: 1rem;
+  }
+  .description {
+    max-width: 900px;
+    margin-bottom: 1.5rem;
+  }
+</style>
