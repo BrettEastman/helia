@@ -1,7 +1,9 @@
 ---
-import events from '../data/events'
 import Layout from "../layouts/Layout.astro";
 import CardEvent from '../components/CardEvent.astro';
+import events from '../data/events'
+import { Image } from "astro:assets";
+import imageData from "../images/Julie&Emma-LowQ-rocks.jpg";
 const pageTitle = "Events";
 ---
 <Layout title={pageTitle}>
@@ -20,6 +22,7 @@ const pageTitle = "Events";
       </div>
     ))}
   </div>
+  <Image width={910} alt={'Picture of Julie and Emma'} src={imageData} />
 </Layout>
 
 <style>
