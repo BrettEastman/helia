@@ -1,6 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import YouTubeEmbed from '../components/YouTubeEmbed.astro';
+import Image from 'astro/components/Image.astro';
+import heliaSun from '../images/helia-web-flower.png';
+import headshotEmma from '../images/helia-emma.jpg';
+import headshotJulie from '../images/helia-about-julie.jpg';
+import emmaJuliePath from '../images/helia-je-path.jpg';
+import emmaJulieStairs from '../images/helia-je-stairs.jpg';
+import emmaJulieTree from '../images/helia-je-tree.jpg';
+import emmaJulieSun from '../images/helia-je-sun.jpg';
+
 ---
 
 <Layout title="Media">
@@ -99,7 +108,19 @@ import YouTubeEmbed from '../components/YouTubeEmbed.astro';
     </section>
     <section>
       <h2>Gallery</h2>
-      <p>Coming soon!</p>
+      <div class="gallery">
+        <Image src={headshotEmma} width={500} alt="Emma & Julie" />
+        <Image src={headshotJulie} width={500} alt="Emma & Julie" />
+        <Image src={emmaJuliePath} width={500} alt="Emma & Julie" />
+        <Image src={emmaJulieSun} width={500} alt="Emma & Julie" />
+        <div>
+          <Image src={emmaJulieStairs} width={500} alt="Emma & Julie" />
+          <div class="sun">
+            <Image src={heliaSun} width={200} alt="Emma & Julie" />
+          </div>
+        </div>
+        <Image src={emmaJulieTree} width={500} alt="Emma & Julie" />
+      </div>
     </section>
   <main>
 </Layout>
@@ -135,5 +156,16 @@ import YouTubeEmbed from '../components/YouTubeEmbed.astro';
     height: 1px;
     background-color: var(--navText);
     border: none;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  .sun {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
   }
 </style>

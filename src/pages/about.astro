@@ -2,7 +2,7 @@
 import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import aboutUs from '../images/helia-about-us.jpg';
-import headshotEmma from '../images/Helia-Music-Collective-Emma-photo.jpg';
+import headshotEmma from '../images/helia-emma.jpg';
 import headshotJulie from '../images/helia-about-julie.jpg';
 
 const pageTitle = "About";
@@ -13,17 +13,46 @@ const pageTitle = "About";
     <section>
       <Image src={aboutUs} width={912} alt="Emma & Julie" />
       <div>
-        <h4 class="about-title">About Helia Music Collective</h4>
+        <h4 class="subtitle">About Helia Music Collective</h4>
       </div>
       <p>
         Co-founded by musician/composers, Emma Logan and Julie Barwick, Helia Music Collective supports the creative endeavors of women in music throughout the San Francisco Bay Area. Helia Music seeks to enrich the community and expand the engagement of women artists through educational outreach and collaborations, with performances and workshops taking place in unique and diverse spaces. Through charitable activities and events, Helia supports the education and development of women in the Bay Area and beyond.
       </p>
     </section>
     <section>
-      <h4 class="about-both">Who We Are</h4>
+      <h4 class="subtitle">Who We Are</h4>
       <div class="two-images">
-        <Image src={headshotEmma} width={441} alt="Emma & Julie" />
-        <Image src={headshotJulie} width={441} alt="Emma & Julie" />
+        <div>
+          <Image src={headshotEmma} width={441} alt="Emma & Julie" />
+          <p class="subtitle">Emma Logan</p>
+          <p>
+            San Francisco-based composer Emma Logan (b. 1990) writes music that is emotionally compelling through the use of gesture, experimentation, and storytelling. Her piece, Three Sisters for flute trio, was selected as a finalist in the 2017 ASCAP Morton Gould Young Composer Awards. Emma’s passion for contemporary music drives her to continue collaborating with fellow composers and performers to bring new music to life.
+            <br>
+            <br>
+            Emma is co-founder of the Helia Music Collective, an organization dedicated to promoting women in music. Helia's first project was in collaboration with Siroko Duo in March 2017, featuring new and recent works by women for flute duo. Emma is also a curator for San Francisco’s Center for New Music and will present concerts for the 2017 and 2018 seasons. In addition to her creative endeavors, Emma is passionate about arts administration. She is currently the Operations Manager at the San Francisco Symphony.
+            <br>
+            <br>
+            Upcoming collaborations include a commission by Miolina Duo, curating a concert with Elevate Ensemble, and curating a series of electro-acoustic music called Alone/Not Alone. Past collaborations include commissions by One Great City Duo, Siroko Duo, Ensemble for These Times, and Areon Flutes with the Guerrilla Composers Guild.
+            <br>
+            <br>
+            Emma has worked with musicians and ensembles across the United States, including Inbal Segev, Opera Theater Unlimited, Fifth House Ensemble, Areon Flutes, the Guerrilla Composers Guild, Aki Tsuyuko, Jane Rigler, One Great City Duo, Ensemble for These Times, Siroko Duo, Fog City Duo, and Emblems Quintet. She has participated in the Oregon Bach Festival Composers Symposium with composer Robert Kyr, the Fresh Inc Music Festival with Fifth House Ensemble, and the Skaneateles Music Festival with composer Paul Moravec. Emma studied with David Garner at the San Francisco Conservatory of Music (MM) and with Andrew Waggoner, Daniel S. Godfrey, and Nicholas Scherzinger at Syracuse University (BM).
+          </p>
+        </div>
+        <div>
+          <Image src={headshotJulie} width={441} alt="Emma & Julie" />
+          <p class="subtitle">Julie Barwick</p>
+          <p>
+            Julie Barwick (b. 1983) is a composer and pianist originally from Southern California and now based in San Francisco. Drawing inspiration from her classical and jazz background, she not only enjoys writing for traditional chamber music ensembles, but also non-traditional ensembles as well as experimental jazz groups.
+            <br>
+            <br>
+            Julie was most recently Composer-in-Residence for Elevate Ensemble and was commissioned to write two pieces for their 2017-18 season.​ She was also a winner of the 2016 Areon International Composition Competition. Other recent commissions were from Hot Air Music Festival, San Francisco Guitar Quartet, Siroko Duo, Carla Fabris, Jill Morgan Brenner, Andronica Trio, and Ignition Duo with the Guerrilla Composers Guild. Her music has been performed throughout the Bay Area and US, and has been selected for performances on festivals such as West Fork New Music Festival in West Virginia, and the Verdant Vibes Concert Series in Rhode Island.
+            <br>
+            <br>
+            As co-founder of Helia Music Collective, she believes strongly in supporting women in music especially through collaborations with Bay Area ensembles and composers. Helia most recently had their second successful collaboration with Liaison Ensemble in October, and is currently in preparations for another collaboration (TBA) to take place in Fall 2019.
+            <br>
+            <br>
+            Julie received her B.A. in music from the University of California, Berkeley and her M.M. in music composition from the San Francisco Conservatory of Music. She has studied with composers Belinda Reynolds, Dan Becker, David Garner, Cindy Cox, and Henry Threadgill.
+          </p>
       </div>
     </section>
   <main>
@@ -37,7 +66,7 @@ const pageTitle = "About";
     align-items: left;
     max-width: 912px;
   }
-  .about-title {
+  .subtitle {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-family: 'Lato', sans-serif;
@@ -49,5 +78,6 @@ const pageTitle = "About";
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+    padding-bottom: 2rem;
   }
 </style>
