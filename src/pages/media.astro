@@ -10,26 +10,92 @@ import YouTubeEmbed from '../components/YouTubeEmbed.astro';
       <p>Check out videos from our recent collaboration with Jeff Anderle and the SFCM Clarinet Ensemble:</p>
       <div class="three-videos">
         <YouTubeEmbed
-          width="100%"
-          height="100%"
           src="https://www.youtube.com/embed/d_LhSnni13s?si=MRgs0Rcbm-2ncxmW"
           title="Three Spaces for 9 Clarinets - Shawne Anell Workman - performed by SFCM Clarinet Ensemble"
         />
         <YouTubeEmbed
-          width="100%"
-          height="100%"
           src="https://www.youtube.com/embed/IwmuaIhqhBU?si=17nf_lMtHApLVegp"
           title="Mapping Out a Sky - Emma Logan - Performed by SFCM Clarinet Ensemble"
         />
         <YouTubeEmbed
-          width="100%"
-          height="100%"
           src="https://www.youtube.com/embed/5SrNIOKFkYw?si=woSyxcoe7s2eJIvo"
           title="In Transit - Julie Barwick - performed by SFCM Clarinet Ensemble"
         />
       </div>
       <hr></hr>
       <p>Recordings from our collaboration with cellist Natalie Raney:</p>
+      <div class="two-videos">
+        <YouTubeEmbed
+          src="https://www.youtube.com/embed/dIIa-KmwZwg?si=o1W3SHqM3Mhw5Rga"
+          title="Moments - Belinda Reynolds - performed by Natalie Raney"
+        />
+        <YouTubeEmbed
+          src="https://www.youtube.com/embed/LtcTex_mB1k?si=wPUxXMHGe2L1cLki"
+          title="stringDefinition - Elizabeth A. Baker - performed by Natalie Raney"
+        />
+        <YouTubeEmbed
+          src="https://www.youtube.com/embed/d4uMm1P8RFo?si=KVwdRAIP3MPs8EHk"
+          title="Desert Aesthetic - Emma Logan - performed by Natalie Raney"
+        />
+        <YouTubeEmbed
+          src="https://www.youtube.com/embed/-RWBSFAUopY?si=lySh23c8F_r9e6Vc"
+          title="Counterbalance - Julie Barwick - performed by Natalie Raney"
+        />
+      </div>
+      <hr></hr>
+      <p>Recordings from our collaboration and concert with Curium Trio:</p>
+      <div class="two-videos">
+        <YouTubeEmbed
+          src="https://www.youtube.com/embed/LM6eE1A0kAI?si=iq_A4dYgoxKbP43k"
+          title="Radiant Gray - Emily Shisko - performed by Curium Trio (world premiere)"
+        />
+        <YouTubeEmbed
+          src="https://www.youtube.com/embed/HZJfG1ewPXc?si=yiSf5UyZ3i3xsXwc"
+          title="Color Analysis from Japanese Silk Brocade - Emma Logan - performed by Curium Trio (world premiere)"
+        />
+        <YouTubeEmbed
+          src="https://www.youtube.com/embed/OWtFbcxd76U?si=P9OQXLuwmHcUT5EC"
+          title="I … My Name - Julie Barwick - performed by Curium Trio (world premiere)"
+        />
+        <YouTubeEmbed
+          src="https://www.youtube.com/embed/dFCRm-5pBuE?si=Fgm4BX0h51Kzhnm7"
+          title="Pale Yellow/Brilliant Blue - Jennifer Higdon - performed by Curium Trio"
+        />
+      </div>
+      <hr></hr>
+      <p>Recordings from our collaboration and concert with Liason Ensemble:</p>
+      <div class="two-videos">
+        <YouTubeEmbed
+          src="https://www.youtube.com/embed/3qmawaJyAig?si=8VTwBB12p3azHUKg"
+          title="In the Evening - Emma Logan - performed by Liaison Ensemble"
+        />
+        <YouTubeEmbed
+          src="https://www.youtube.com/embed/gXwtiOL3k1I?si=WewIhfD9GIzl_NBz"
+          title="Songs of Ice and Fire - Julie Barwick - performed by Liaison Ensemble"
+        />
+        <YouTubeEmbed
+          src="https://www.youtube.com/embed/vaHyJvMlvoE?si=d2IsCnUbnBiC1xqn"
+          title="am burning, have burned, will burn - Emily Koh - performed by Liaison Ensemble"
+        />
+        <YouTubeEmbed
+          src="https://www.youtube.com/embed/OGZChzMuU_E?si=1m0lb7q5RBrwNlUZ"
+          title="Fragmented Lament - Lily Chen - performed by Liaison Ensemble"
+        />
+      </div>
+      <hr></hr>
+      <p>
+        Working with Siroko Duo in preparation for Re:Ignite concert:
+      </p>
+      <div class="two-videos">
+        <YouTubeEmbed
+          src="https://www.youtube.com/embed/ONKhoBH-Br8?si=j9oD8axLUlgWPqdD"
+          title="Siroko Duo Conversations with Composers: Julie Barwick"
+        />
+        <YouTubeEmbed
+          src="https://www.youtube.com/embed/ABUjaslJFy8?si=uz5l6yTVbpDpo_Eo"
+          title="Siroko Duo: Conversations with Emma Logan"
+        />
+      </div>
     </section>
     <section>
       <h2>Gallery</h2>
@@ -57,6 +123,11 @@ import YouTubeEmbed from '../components/YouTubeEmbed.astro';
   .three-videos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .two-videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
   hr {
