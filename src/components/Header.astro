@@ -2,13 +2,13 @@
 import Navigation from "./Navigation.astro"
 import Hamburger from "./Hamburger.astro"
 import ThemeIcon from "./ThemeIcon.astro"
+import { Image } from "astro:assets";
+import heliaLogo from "../images/Helia_web_H.png";
 ---
 
 <header>
   <div class="name-header">
-    <h1>
-      Helia Music Collective
-    </h1>
+    <Image src={heliaLogo} width={300} alt="Helia Logo" />
     <ThemeIcon />
   </div>
   <nav>
@@ -19,19 +19,10 @@ import ThemeIcon from "./ThemeIcon.astro"
 
 <style>
   .name-header {
-    font-weight: 300;
     display: flex;
-    justify-content: space-around;
-    text-transform: uppercase;
+    justify-content: center;
+    gap: 1.5rem;
     padding: 1rem;
-    /* margin-bottom: 1rem; */
-    letter-spacing: 0.1em;
-    font-size: 1rem;
-    text-align: center;
     align-items: center;
-    color: var(--primary30);
-    @media (min-width: 768px) {
-      font-size: 2rem;
-    }
   }
 </style>
