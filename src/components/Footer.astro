@@ -1,12 +1,16 @@
 ---
-import Social from "./Social.astro"
+const socials = [
+  { platform: "facebook", username: "heliamusiccollective" },
+  { platform: "instagram", username: "heliamusiccollective" },
+  { platform: "youtube", username: "channel/UCAO6CEqJ4NBG-HGXXp8BH3w" }
+]
 ---
 
 <footer>
-  <div>
-    <Social platform="facebook" username="heliamusiccollective" />
-    <Social platform="instagram" username="heliamusiccollective" />
-    <Social platform="youtube" username="channel/UCAO6CEqJ4NBG-HGXXp8BH3w" />
+  <div class="socials">
+    {socials.map(social => (
+      <a class='platforms' href={`https://www.${social.platform}.com/${social.username}/`} target="_blank">{social.platform}</a>
+    ))}
   </div>
   <p id="copyright">© <span>Helia Music Collective</span></p>
 </footer>
@@ -14,26 +18,12 @@ import Social from "./Social.astro"
 <script>
   const copyright = document.getElementById('copyright');
   if (copyright) {
-      copyright.innerHTML = `Copyright ©${new Date().getFullYear()} <span>Helia Music Collective</span>`;
+      copyright.innerHTML = `Copyright ©${new Date().getFullYear()} Helia Music Collective`;
   }
 </script>
 
 <style>
-  footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 1rem;
-    padding: 5rem 0;
-    width: 100%;
-    color: var(--primary30);
-    background-color: var(--footerBackground);
-    text-align: center;
-  }
   #copyright {
     font-size: 0.8rem;
-  }
-  span {
-    color: var(--accentLight);
   }
 </style>

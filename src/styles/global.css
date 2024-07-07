@@ -25,6 +25,7 @@
   --accentDark: #dea128;
   --sun: #fdd016;
   --logoAccent: #a9dbc9;
+  --logoAccentDark: #5b7b70;
   --navText: #a5a5a5;
   --subtitleText: #333333;
   --icon: #b9b9b9;
@@ -96,13 +97,111 @@ a {
   background-color: var(--navText);
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 5rem 0;
+  width: 100%;
+  color: var(--primary30);
+  background-color: var(--footerBackground);
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.platforms {
+  padding: 0.5rem 1rem;
+  color: var(--primary100);
+  background-color: var(--icon);
+  text-decoration: none;
+}
+
+.socials a:hover {
+  background-color: var(--logoAccent);
+}
+
+.contact-title {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: var(--subtitleText);
+  margin-top: 1rem;
+}
+
+.media-section-titles {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--subtitleText);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.categories {
+  font-family: "Lato", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 200;
+  color: var(--subtitleText);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
 html.dark {
-  background-color: var(--primary20);
+  background-color: var(--logoAccentDark);
   color: var(--primary80);
 }
 
 .dark .nav-links a {
   color: var(--primary100);
+}
+
+.dark footer {
+  background-color: var(--primary20);
+  color: var(--primary80);
+}
+
+.dark .subtitle {
+  color: var(--primary80);
+  font-weight: 500;
+}
+
+.dark .media-section-titles {
+  color: var(--primary80);
+  font-weight: 500;
+}
+
+.dark .categories {
+  color: var(--primary80);
+  font-weight: 500;
+}
+
+.dark .platforms {
+  color: var(--primary20);
+  background-color: var(--primary40);
+  font-weight: 500;
+}
+
+.dark .platforms:hover {
+  background-color: var(--primary60);
+}
+
+.dark .contact-title {
+  color: var(--primary80);
+  font-weight: 500;
 }
 
 @media screen and (min-width: 636px) {

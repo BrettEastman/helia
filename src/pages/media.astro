@@ -15,7 +15,7 @@ import emmaJulieSun from '../images/je-sun.jpg';
 <Layout title="Media">
   <main>
     <section class="section-one">
-      <h2>Videos</h2>
+      <h2 class='media-section-titles'>Videos</h2>
       <p>Check out videos from our recent collaboration with <a href="https://www.jeffanderle.com/" target="_blank">Jeff Anderle</a> and the SFCM Clarinet Ensemble:</p>
       <div class="three-videos">
         <YouTubeEmbed
@@ -107,7 +107,7 @@ import emmaJulieSun from '../images/je-sun.jpg';
       </div>
     </section>
     <section>
-      <h2>Gallery</h2>
+      <h2 class='media-section-titles'>Gallery</h2>
       <div class="gallery">
         <Image src={headshotEmma} width={500} alt="Headshot of Emma Logan" />
         <Image src={headshotJulie} width={500} alt="Headshot of Julie Barwick" />
@@ -135,12 +135,7 @@ import emmaJulieSun from '../images/je-sun.jpg';
     margin-bottom: 2rem;
     max-width: 1000px;
   }
-  h2 {
-    font-family: 'Lato', sans-serif;
-    font-size: 2rem;
-    font-weight: 300;
-    margin-bottom: 1rem;
-  }
+
   .three-videos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
