@@ -16,7 +16,7 @@ import emmaJulieSun from '../images/je-sun.jpg';
   <main>
     <section class="section-one">
       <h2>Videos</h2>
-      <p>Check out videos from our recent collaboration with Jeff Anderle and the SFCM Clarinet Ensemble:</p>
+      <p>Check out videos from our recent collaboration with <a href="https://www.jeffanderle.com/" target="_blank">Jeff Anderle</a> and the SFCM Clarinet Ensemble:</p>
       <div class="three-videos">
         <YouTubeEmbed
           src="https://www.youtube.com/embed/d_LhSnni13s?si=MRgs0Rcbm-2ncxmW"
@@ -32,7 +32,7 @@ import emmaJulieSun from '../images/je-sun.jpg';
         />
       </div>
       <hr></hr>
-      <p>Recordings from our collaboration with cellist Natalie Raney:</p>
+      <p>Recordings from our collaboration with cellist <a href="https://www.natalieraneycello.com/" target="_blank">Natalie Raney</a>:</p>
       <div class="two-videos">
         <YouTubeEmbed
           src="https://www.youtube.com/embed/dIIa-KmwZwg?si=o1W3SHqM3Mhw5Rga"
@@ -52,7 +52,7 @@ import emmaJulieSun from '../images/je-sun.jpg';
         />
       </div>
       <hr></hr>
-      <p>Recordings from our collaboration and concert with Curium Trio:</p>
+      <p>Recordings from our collaboration and concert with <a href="https://www.curiumtrio.com/" target="_blank">Curium Trio</a>:</p>
       <div class="two-videos">
         <YouTubeEmbed
           src="https://www.youtube.com/embed/LM6eE1A0kAI?si=iq_A4dYgoxKbP43k"
@@ -93,7 +93,7 @@ import emmaJulieSun from '../images/je-sun.jpg';
       </div>
       <hr></hr>
       <p>
-        Working with Siroko Duo in preparation for Re:Ignite concert:
+        Working with <a href="https://sirokoduo.com/" target="_blank">Siroko Duo</a> in preparation for Re:Ignite concert:
       </p>
       <div class="two-videos">
         <YouTubeEmbed
@@ -109,17 +109,17 @@ import emmaJulieSun from '../images/je-sun.jpg';
     <section>
       <h2>Gallery</h2>
       <div class="gallery">
-        <Image src={headshotEmma} width={500} alt="Emma & Julie" />
-        <Image src={headshotJulie} width={500} alt="Emma & Julie" />
-        <Image src={emmaJuliePath} width={500} alt="Emma & Julie" />
-        <Image src={emmaJulieSun} width={500} alt="Emma & Julie" />
+        <Image src={headshotEmma} width={500} alt="Headshot of Emma Logan" />
+        <Image src={headshotJulie} width={500} alt="Headshot of Julie Barwick" />
+        <Image src={emmaJuliePath} width={500} alt="Emma & Julie standing on the path at Land's End looking in different directions from each other" />
+        <Image src={emmaJulieSun} width={500} alt="Julie & Emma standing on a bridge with the sun rays shining up in the background" />
         <div>
-          <Image src={emmaJulieStairs} width={500} alt="Emma & Julie" />
+          <Image src={emmaJulieStairs} width={500} alt="Julie & Emma sitting on the stairs together, smiling" />
           <div class="sun">
-            <Image src={heliaSun} width={200} alt="Emma & Julie" />
+            <Image src={heliaSun} width={200} alt="Helia Sun logo" />
           </div>
         </div>
-        <Image src={emmaJulieTree} width={500} alt="Emma & Julie" />
+        <Image src={emmaJulieTree} width={500} alt="Emma sitting on branch of tree with Julie standing on the ground next to and below her" />
       </div>
     </section>
   <main>
@@ -167,5 +167,12 @@ import emmaJulieSun from '../images/je-sun.jpg';
     justify-content: center;
     align-items: center;
     margin-top: 5rem;
+  }
+  a {
+    color: var(--accentDark);
+    text-decoration: none;
+  }
+  a:hover {
+    color: var(--accentLight);
   }
 </style>

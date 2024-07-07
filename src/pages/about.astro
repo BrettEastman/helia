@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import aboutUs from '../images/je-us.png';
 import headshotEmma from '../images/emma.jpg';
 import headshotJulie from '../images/about-julie.jpg';
+import collaborators from '../images/helia-siroko-mar25-2017.jpg';
 
 const pageTitle = "About";
 ---
@@ -23,7 +24,7 @@ const pageTitle = "About";
       <h4 class="subtitle">Who We Are</h4>
       <div class="two-images">
         <div>
-          <Image src={headshotEmma} width={441} alt="Emma & Julie" />
+          <Image src={headshotEmma} width={441} alt="Headshot of Emma Logan" />
           <p class="subtitle">Emma Logan</p>
           <p>
             San Francisco-based composer <a href="https://www.emmalogan.com/" target="_blank">Emma Logan</a> (b. 1990) writes music that is emotionally compelling through the use of gesture, experimentation, and storytelling. Her piece, Three Sisters for flute trio, was selected as a finalist in the 2017 ASCAP Morton Gould Young Composer Awards. Emma’s passion for contemporary music drives her to continue collaborating with fellow composers and performers to bring new music to life.
@@ -39,7 +40,7 @@ const pageTitle = "About";
           </p>
         </div>
         <div>
-          <Image src={headshotJulie} width={441} alt="Emma & Julie" />
+          <Image src={headshotJulie} width={441} alt="Headshot of Julie Barwick" />
           <p class="subtitle">Julie Barwick</p>
           <p>
             <a href="https://www.juliebarwick.com/" target="_blank">Julie Barwick</a> (b. 1983) is a composer and pianist originally from Southern California and now based in San Francisco. Drawing inspiration from her classical and jazz background, she not only enjoys writing for traditional chamber music ensembles, but also non-traditional ensembles as well as experimental jazz groups.
@@ -55,6 +56,41 @@ const pageTitle = "About";
           </p>
       </div>
     </section>
+    <hr></hr>
+    <section>
+      <h4 class="subtitle">Collaborators</h4>
+      <Image src={collaborators} width={639} alt="Helia Music Collective at Siroko Duo concert" />
+      <p class="caption">Re:Ignite: Helia Music Collective & Siroko Duo concert in March 2017 (photo by Meerenai Shim)</p>
+      <h5 class="categories">Composers</h5>
+      <ul>
+        <li><a href="https://www.chelsealoew.com/" target="_blank">Chelsea Loew</a></li>
+        <li><a href="https://janerigler.com/" target="_blank">Jane Rigler</a></li>
+        <li><a href="https://www.adjectivenewmusic.com/hudelson.html" target="_blank">Brandy Hudelson</a></li>
+        <li><a href="https://chenlily.com/" target="_blank">Lily Chen</a></li>
+        <li><a href="https://www.emilykoh.net/" target="_blank">Emily Koh</a></li>
+        <li><a href="https://emilyshisko.wordpress.com/" target="_blank">Emily Shisko</a></li>
+        <li><a href="https://heshemusic.com/pages/belinda-reynolds" target="_blank">Belinda Reynolds</a></li>
+        <li><a href="https://elizabethabaker.com/" target="_blank">The Honourable Elizabeth A. Baker</a></li>
+        <li><a href="https://www.theresawong.org/" target="_blank">Theresa Wong</a></li>
+        <li><a href="https://saworkman.com/" target="_blank">Shawne Anell Workman</a></li>
+      </ul>
+      <h5 class="categories">Performers</h5>
+      <ul>
+        <li><a href="https://www.jeffanderle.com/" target="_blank">Jeff Anderle</a> | <a href="https://sfcm.edu/study/ensembles/clarinet-ensemble" target="_blank">SFCM Clarinet Ensemble</a></li>
+        <li><a href="https://www.natalieraneycello.com/" target="_blank">Natalie Raney</a></li>
+        <li><a href="https://sirokoduo.com/" target="_blank">Siroko Duo</a></li>
+        <li><a href="https://www.curiumtrio.com/" target="_blank">Curium Trio</a></li>
+        <li><a href="https://intermusicsf.org/affiliate/liaison-ensemble/" target="_blank">Liason Ensemble</a></li>
+        <li><a href="https://roberthuntsimonds.com/" target="_blank">Robert Hunt Simonds</a></li>
+        <li><a href="https://ltingarts.com/" target="_blank">Ting Luo</a></li>
+      </ul>
+      <h5 class="categories">Venues</h5>
+      <ul>
+        <li><a href="https://centerfornewmusic.com/" target="_blank">Center For New Music</a></li>
+        <li><a href="https://www.sevenperforms.org/" target="_blank">Seventh Avenue Performances</a></li>
+        <li><a href="https://www.oldfirstconcerts.org/" target="_blank">Old First Concerts</a></li>
+        <li><a href="https://sfcm.edu/" target="_blank">San Francisco Conservatory of Music</a></li>
+      </ul>
   <main>
 </Layout>
 
@@ -65,6 +101,7 @@ const pageTitle = "About";
     justify-content: center;
     align-items: left;
     max-width: 912px;
+    margin-bottom: 2rem;
   }
   .subtitle {
     margin-top: 2rem;
@@ -72,6 +109,14 @@ const pageTitle = "About";
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 2rem;
+    color: var(--subtitleText);
+  }
+  .categories {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    font-size: 1.75rem;
     color: var(--subtitleText);
   }
   .two-images {
@@ -86,5 +131,16 @@ const pageTitle = "About";
   }
   a:hover {
     color: var(--accentLight);
+  }
+  .caption {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: var(--subtitleText);
+  }
+  hr {
+    /* margin: 2em auto; */
+    /* height: 1px; */
+    /* background-color: black; */
+    border: 1px solid var(--navText);
   }
 </style>
