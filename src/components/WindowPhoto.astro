@@ -1,0 +1,57 @@
+---
+const { text } = Astro.props;
+---
+
+<div class="container">
+  <section class="window-container">
+    <div class="foreground-content">
+      <h1>{text}</h1>
+    </div>
+  </section>
+</div>
+
+<style>
+  .container {
+		margin: 0;
+    padding: 0;
+    height: 100%;
+		width: 100%;
+    overflow-x: hidden;
+		position: relative;
+    z-index: 1;
+	}
+  .window-container {
+    display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		height: 350px;
+		width: 100%;
+		overflow: hidden;
+		background-image: url("../images/SF-ocean-beach-bg.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+  }
+  .foreground-content {
+    display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		color: var(--primary100);
+		background-color: rgba(169, 219, 201, 0.75);
+		font-family: 'Lato', sans-serif;
+		font-weight: 500;
+		font-size: 44px;
+		position: relative;
+		z-index: 1;
+		width: 852px;
+		border-radius: 12px;
+		height: 119px;
+  }
+  /* h1 {
+    font-size: 3rem;
+    font-weight: 300;
+  } */
+</style>

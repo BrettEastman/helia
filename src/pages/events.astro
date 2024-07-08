@@ -4,30 +4,61 @@ import CardEvent from '../components/CardEvent.astro';
 import events from '../data/events'
 import { Image } from "astro:assets";
 import imageData from "../images/je-rocks.jpg";
+import WindowPhoto from '../components/WindowPhoto.astro';
 const pageTitle = "Events";
 ---
 <Layout title={pageTitle}>
-  <h2 class="media-section-titles">Past Events</h2>
-  <div>
-    {events.map((event) => (
+  <main>
+    <section class="hero">
+      <WindowPhoto text="Events" />
+    </section>
+    <section class="events-list">
+      <h2 class="media-section-titles">Past Events</h2>
       <div>
-        <CardEvent
-          eventTitle={event.title}
-          concertDate={event.concertDate}
-          venue={event.venue}
-          venueAddress={event.venueAddress}
-          city={event.city}
-          eventDescription={event.description}
-        />
+        {events.map((event) => (
+          <div>
+            <CardEvent
+              eventTitle={event.title}
+              concertDate={event.concertDate}
+              venue={event.venue}
+              venueAddress={event.venueAddress}
+              city={event.city}
+              eventDescription={event.description}
+            />
+          </div>
+        ))}
       </div>
-    ))}
-  </div>
-  <div class="image-events">
-    <Image width={910} alt="Emma and Julie standing on rocks by the beach, looking off to the side towards the sun" src={imageData} />
-  </div>
+      <div class="image-events">
+        <Image width={910} alt="Emma and Julie standing on rocks by the beach, looking off to the side towards the sun" src={imageData} />
+      </div>
+    </section>
+  </main>
 </Layout>
 
 <style>
+  main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+  .hero {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100vw;
+		font-family: 'Lato', sans-serif;
+		font-weight: 300;
+		font-size: 24px;
+		position: relative;
+    z-index: 1;
+	}
+  .events-list {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    max-width: 900px;
+  }
   h2 {
     font-family: 'Lato', sans-serif;
     font-size: 2.25rem;
