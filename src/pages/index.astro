@@ -1,14 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { Image } from "astro:assets";
-import backgroundAmbience from "../images/background.jpg";
 import julieEmmaPath from "../images/je-path.jpg";
 ---
 
 <Layout title="Helia Music Collective">
 	<main>
 		<section class="hero">
-			<Image width={1600} height={400} alt={'Background ambient colors'} src={backgroundAmbience} />
+			<div class="container">
+				<section class="window-container">
+					<div class="foreground-content">
+						<h1>hēlē'a - of the sun</h1>
+					</div>
+				</section>
+			</div>
 			<div class="inner-hero">
 				<p>Helia Music Collective supports the creative endeavors of women in music throughout the San Francisco Bay Area.</p>
 				<a href="/about">About us</a>
@@ -16,7 +21,6 @@ import julieEmmaPath from "../images/je-path.jpg";
 
 			</div>
 		</section>
-
 	</main>
 </Layout>
 
@@ -24,6 +28,7 @@ import julieEmmaPath from "../images/je-path.jpg";
 	main {
 		display: flex;
 		flex-direction: column;
+		width: auto;
 	}
 	.hero {
 		display: flex;
@@ -33,6 +38,8 @@ import julieEmmaPath from "../images/je-path.jpg";
 		font-family: 'Lato', sans-serif;
 		font-weight: 300;
 		font-size: 24px;
+		position: relative;
+    z-index: 1;
 	}
 	.inner-hero {
 		display: flex;
@@ -57,5 +64,41 @@ import julieEmmaPath from "../images/je-path.jpg";
     font-size: 15px;
     text-transform: uppercase;
     transition-duration: 300ms;
+	}
+	.container {
+		margin: 0;
+    padding: 0;
+    height: 100%;
+		width: 100%;
+    overflow-x: hidden;
+		position: relative;
+    z-index: 1;
+	}
+	.window-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		height: 450px;
+		width: 100%;
+		overflow: hidden;
+		background-image: url("../images/SF-ocean-beach-bg.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	.foreground-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		color: var(--primary100);
+		background-color: rgba(169, 219, 201, 0.5);
+		position: relative;
+		z-index: 1;
+		width: 852px;
+		border-radius: 12px;
+		height: 119px;
 	}
 </style>
