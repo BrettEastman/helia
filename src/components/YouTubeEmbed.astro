@@ -4,9 +4,11 @@ interface Props {
   height?: string;
   src: string;
   title: string;
+  pieceName?: string;
+  composer?: string;
 }
 
-const { width = '100%', height = '100%', src, title } = Astro.props
+const { width = '100%', height = '100%', src, title, pieceName, composer } = Astro.props
 ---
 
 <div class="stack">
@@ -20,7 +22,10 @@ const { width = '100%', height = '100%', src, title } = Astro.props
       allowfullscreen
     />
   </div>
-  <p>{title}</p>
+  {pieceName && composer && <p><em>{pieceName}</em> - {composer}</p>}
+  {pieceName && !composer && <p><em>{pieceName}</em></p>}
+  {!pieceName && composer && <p>{composer}</p>}
+  {!pieceName && !composer && <p>{title}</p>}
 </div>
 
 <style>
