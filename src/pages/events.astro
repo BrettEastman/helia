@@ -29,7 +29,13 @@ const pageTitle = "Events";
         ))}
       </div>
       <div class="image-events">
-        <Image width={910} alt="Emma and Julie standing on rocks by the beach, looking off to the side towards the sun" src={imageData} />
+        <Image
+          width={910}
+          alt="Emma and Julie standing on rocks by the beach, looking off to the side towards the sun"
+          src={imageData}
+          sizes="75vw"
+          class="responsive-image"
+        />
       </div>
     </section>
   </main>
@@ -58,6 +64,7 @@ const pageTitle = "Events";
     flex-direction: column;
     align-items: left;
     max-width: 900px;
+    margin: 0 2rem;
   }
   h2 {
     font-family: 'Lato', sans-serif;
@@ -68,5 +75,10 @@ const pageTitle = "Events";
   }
   .image-events {
     margin-bottom: 2rem;
+  }
+  .responsive-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 </style>
