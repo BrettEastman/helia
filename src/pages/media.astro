@@ -212,7 +212,7 @@ import emmaJulieSun from '../images/je-sun.jpg';
     height: auto;
     object-fit: cover;
     padding: 1rem;
-    transform: scale(0.7);
+    transform: scale(0.65);
   }
   a {
     color: var(--accentDark);
@@ -225,6 +225,7 @@ import emmaJulieSun from '../images/je-sun.jpg';
   @media (max-width: 900px) {
     .three-videos {
       grid-template-columns: repeat(2, 1fr);
+      gap: 0.5rem;
     }
   }
 
@@ -233,6 +234,7 @@ import emmaJulieSun from '../images/je-sun.jpg';
     .two-videos,
     .gallery {
       grid-template-columns: 1fr;
+      gap: 0.5rem;
     }
   }
 </style>
