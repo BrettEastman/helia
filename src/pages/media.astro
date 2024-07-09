@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import YouTubeEmbed from '../components/YouTubeEmbed.astro';
 import Image from 'astro/components/Image.astro';
+import WindowPhoto from '../components/WindowPhoto.astro';
 import heliaSun from '../images/web-flower.png';
 import headshotEmma from '../images/emma.jpg';
 import headshotJulie from '../images/about-julie.jpg';
@@ -14,6 +15,9 @@ import emmaJulieSun from '../images/je-sun.jpg';
 
 <Layout title="Media">
   <main>
+    <section class="hero">
+      <WindowPhoto text="Media" />
+    </section>
     <section class="section-one">
       <h2 class='media-section-titles'>Videos</h2>
       <p>Check out videos from our recent collaboration with <a href="https://www.jeffanderle.com/" target="_blank">Jeff Anderle</a> and the SFCM Clarinet Ensemble:</p>
@@ -137,20 +141,18 @@ import emmaJulieSun from '../images/je-sun.jpg';
         />
       </div>
     </section>
-    <section>
+    <section class="section-two">
       <h2 class='media-section-titles'>Gallery</h2>
       <div class="gallery">
-        <Image src={headshotEmma} width={500} alt="Headshot of Emma Logan" />
-        <Image src={headshotJulie} width={500} alt="Headshot of Julie Barwick" />
-        <Image src={emmaJuliePath} width={500} alt="Emma & Julie standing on the path at Land's End looking in different directions from each other" />
-        <Image src={emmaJulieSun} width={500} alt="Julie & Emma standing on a bridge with the sun rays shining up in the background" />
+        <Image src={headshotEmma} width={500} alt="Headshot of Emma Logan" class="responsive-image" />
+        <Image src={headshotJulie} width={500} alt="Headshot of Julie Barwick" class="responsive-image" />
+        <Image src={emmaJuliePath} width={500} alt="Emma & Julie standing on the path at Land's End looking in different directions from each other" class="responsive-image" />
+        <Image src={emmaJulieSun} width={500} alt="Julie & Emma standing on a bridge with the sun rays shining up in the background" class="responsive-image" />
+        <Image src={emmaJulieTree} width={500} alt="Emma sitting on branch of tree with Julie standing on the ground next to and below her" class="responsive-image" />
         <div>
-          <Image src={emmaJulieStairs} width={500} alt="Julie & Emma sitting on the stairs together, smiling" />
-          <div class="sun">
-            <Image src={heliaSun} width={200} alt="Helia Sun logo" />
-          </div>
+          <Image src={emmaJulieStairs} width={500} alt="Julie & Emma sitting on the stairs together, smiling" class="responsive-image" />
+          <Image src={heliaSun} alt="Helia Sun logo" class="responsive-sun-image" />
         </div>
-        <Image src={emmaJulieTree} width={500} alt="Emma sitting on branch of tree with Julie standing on the ground next to and below her" />
       </div>
     </section>
   <main>
@@ -160,13 +162,25 @@ import emmaJulieSun from '../images/je-sun.jpg';
   main {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    align-items: center;
+    margin: 0 2rem;
   }
+  .hero {
+		width: 100vw;
+		position: relative;
+    z-index: 1;
+    margin-bottom: 1rem;
+	}
   .section-one {
     margin-bottom: 2rem;
     max-width: 1000px;
+    margin: 0 2rem;
   }
-
+  .section-two {
+    margin-bottom: 2rem;
+    max-width: 1000px;
+    margin: 0 2rem;
+  }
   .three-videos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -188,11 +202,17 @@ import emmaJulieSun from '../images/je-sun.jpg';
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
   }
-  .sun {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
+  .responsive-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .responsive-sun-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 1rem;
+    transform: scale(0.7);
   }
   a {
     color: var(--accentDark);
@@ -200,5 +220,19 @@ import emmaJulieSun from '../images/je-sun.jpg';
   }
   a:hover {
     color: var(--accentLight);
+  }
+
+  @media (max-width: 900px) {
+    .three-videos {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .three-videos,
+    .two-videos,
+    .gallery {
+      grid-template-columns: 1fr;
+    }
   }
 </style>

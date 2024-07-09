@@ -7,7 +7,7 @@ import imageData from "../images/je-stairs.jpg";
 
 <Layout title="Contact">
   <main>
-    <Image src={imageData} width={750} alt='Julie & Emma sitting on the steps, smiling'/>
+    <Image src={imageData} width={750} alt='Julie & Emma sitting on the steps, smiling' class="responsive-image"/>
     <div>
       <h4 class="contact-title">Contact Us</h4>
     </div>
@@ -28,7 +28,6 @@ import imageData from "../images/je-stairs.jpg";
     flex-direction: column;
     padding: 20px;
   }
-
   h6 {
     color: var(--primary30);
     font-size: 1rem;
@@ -36,10 +35,14 @@ import imageData from "../images/je-stairs.jpg";
     text-transform: uppercase;
     padding: 14px 0px;
   }
-
   p {
     color: var(--primary50);
     font-size: 1rem;
     font-weight: 300;
+  }
+  .responsive-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 </style>
