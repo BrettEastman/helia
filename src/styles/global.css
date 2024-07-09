@@ -147,8 +147,7 @@ footer {
   font-size: 2rem;
   font-weight: 300;
   color: var(--subtitleText);
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 .categories {

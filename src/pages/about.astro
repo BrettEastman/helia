@@ -12,7 +12,7 @@ const pageTitle = "About";
 <Layout title={pageTitle}>
   <main>
     <section>
-      <Image src={aboutUs} width={912} alt="Emma & Julie" />
+      <Image src={aboutUs} width={912} alt="Emma & Julie" class="responsive-image" />
       <div>
         <h4 class="subtitle">About Helia Music Collective</h4>
       </div>
@@ -24,7 +24,7 @@ const pageTitle = "About";
       <h4 class="subtitle">Who We Are</h4>
       <div class="two-images">
         <div>
-          <Image src={headshotEmma} width={441} alt="Headshot of Emma Logan" />
+          <Image src={headshotEmma} width={441} alt="Headshot of Emma Logan" class="responsive-image" />
           <p class="subtitle">Emma Logan</p>
           <p>
             San Francisco-based composer <a href="https://www.emmalogan.com/" target="_blank">Emma Logan</a> (b. 1990) writes music that is emotionally compelling through the use of gesture, experimentation, and storytelling. Her piece, Three Sisters for flute trio, was selected as a finalist in the 2017 ASCAP Morton Gould Young Composer Awards. Emma’s passion for contemporary music drives her to continue collaborating with fellow composers and performers to bring new music to life.
@@ -40,8 +40,10 @@ const pageTitle = "About";
           </p>
         </div>
         <div>
-          <Image src={headshotJulie} width={441} alt="Headshot of Julie Barwick" />
-          <p class="subtitle">Julie Barwick</p>
+          <div>
+            <Image src={headshotJulie} width={441} alt="Headshot of Julie Barwick" class="responsive-image" />
+            <p class="subtitle">Julie Barwick</p>
+          </div>
           <p>
             <a href="https://www.juliebarwick.com/" target="_blank">Julie Barwick</a> (b. 1983) is a composer and pianist originally from Southern California and now based in San Francisco. Drawing inspiration from her classical and jazz background, she not only enjoys writing for traditional chamber music ensembles, but also non-traditional ensembles as well as experimental jazz groups.
             <br>
@@ -59,7 +61,7 @@ const pageTitle = "About";
     <hr></hr>
     <section>
       <h4 class="subtitle">Collaborators</h4>
-      <Image src={collaborators} width={639} alt="Helia Music Collective at Siroko Duo concert" />
+      <Image src={collaborators} width={639} alt="Helia Music Collective at Siroko Duo concert" class="responsive-image" />
       <p class="caption">Re:Ignite: Helia Music Collective & Siroko Duo concert in March 2017 (photo by Meerenai Shim)</p>
       <h5 class="categories">Composers</h5>
       <ul>
@@ -102,13 +104,20 @@ const pageTitle = "About";
     align-items: left;
     max-width: 912px;
     margin-bottom: 2rem;
+    margin: 0 2rem;
+    padding-bottom: 1rem;
   }
-
   .two-images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     padding-bottom: 2rem;
+  }
+  .responsive-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding-top: 1rem;
   }
   a {
     color: var(--accentDark);
@@ -124,5 +133,11 @@ const pageTitle = "About";
   }
   hr {
     border: 1px solid var(--navText);
+  }
+
+  @media screen and (max-width: 636px) {
+    .two-images {
+      grid-template-columns: 1fr;
+    }
   }
 </style>

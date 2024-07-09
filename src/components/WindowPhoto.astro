@@ -52,7 +52,18 @@ const { text } = Astro.props;
   }
   h1 {
     width: 100%;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 500;
   }
+	@media screen and (min-width: 636px) {
+		.window-container {
+			height: 450px;
+		}
+		.foreground-content {
+			height: 169px;
+		}
+		h1 {
+			font-size: 3rem;
+		}
+	}
 </style>
