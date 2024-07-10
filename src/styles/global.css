@@ -119,7 +119,7 @@ footer {
   font-weight: 300;
   font-size: 2rem;
   color: var(--subtitleText);
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 
 .media-section-titles {
@@ -250,7 +250,7 @@ html.dark {
     font-weight: 400;
     width: 100%;
     margin-bottom: 2rem;
-    background-color: var(--primary100);
+    background-color: transparent;
     z-index: 1;
   }
   .nav-links.expanded {
@@ -259,6 +259,9 @@ html.dark {
   .nav-links a {
     padding: 10px 20px;
     text-align: center;
+  }
+  .dark .nav-links a {
+    color: var(--primary100);
   }
 }
 

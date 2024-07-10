@@ -11,13 +11,13 @@ import imageData from "../images/je-stairs.jpg";
     <div>
       <h4 class="contact-title">Contact Us</h4>
     </div>
-    <h6>Location</h6>
-    <p>
-      We are based in San Francisco.
-    </p>
-    <h6>Email Address</h6>
+    <h6 class="contact-subtitle">Email Address</h6>
     <p>
       heliamusiccollective [at] gmail [dot] com
+    </p>
+    <h6 class="contact-subtitle">Location</h6>
+    <p>
+      We are based in San Francisco.
     </p>
   <main>
 </Layout>
@@ -28,12 +28,11 @@ import imageData from "../images/je-stairs.jpg";
     flex-direction: column;
     padding: 20px;
   }
-  h6 {
-    color: var(--primary30);
+  .contact-subtitle {
     font-size: 1rem;
     font-weight: 300;
     text-transform: uppercase;
-    padding: 14px 0px;
+    padding-top: 14px;
   }
   p {
     color: var(--primary50);
