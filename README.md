@@ -15,8 +15,8 @@
 
 ## About
 
-This static web site was contracted to Brett Eastman Studio by Helia Music Collective. It serves as their primary presence on the web, with information, history, and links to content.
-[Click here to see the site:](https://helia-music-collective.netlify.app/media/)
+This static web site was contracted to Brett Eastman Studio by Helia Music Collective. It serves as their primary presence on the web, with information, history, and links to content. It is currently under construction, but you can
+[ click here to see the site:](https://helia-music-collective.netlify.app/media/)
   
 ### Features
 
