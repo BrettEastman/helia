@@ -1,59 +1,16 @@
 ---
 import ThemeIcon from "./ThemeIcon.astro";
-
 ---
 
 <div>
   <div class="nav-links">
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/events">Events</a>
-    <a href="/media">Media</a>
-    <a href="/contact">Contact</a>
-    <ThemeIcon />
+    <a class="nav-items" href="/">Home</a>
+    <a class="nav-items" href="/about">About</a>
+    <a class="nav-items" href="/events">Events</a>
+    <a class="nav-items" href="/media">Media</a>
+    <a class="nav-items" href="/contact">Contact</a>
+    <div class="nav-items">
+      <ThemeIcon />
+    </div>
   </div>
 </div>
-
-<style>
-  .nav-links {
-    width: 100%;
-    font-family: 'Montserrat Variable', sans-serif;
-    font-weight: 500;
-    display: none;
-    margin: 0;
-  }
-
-  .nav-links a {
-    text-align: center;
-    color: var(--navText);
-    padding: 10px 0;
-    text-decoration: none;
-    font-size: 14px;
-    text-transform: uppercase;
-    transition-duration: 300ms;
-  }
-
-  .nav-links a:hover,
-  .nav-links a:focus {
-    background-color: var(--primary80);
-    color: var(--accentDark);
-  }
-
-  .expanded {
-    display: unset;
-  }
-
-  @media screen and (min-width: 636px) {
-    .nav-links {
-      display: flex;
-      justify-content: space-around;
-      width: auto;
-      background: none;
-    }
-
-    .nav-links a {
-      display: inline-block;
-      padding: 15px 20px;
-    }
-  }
-</style>

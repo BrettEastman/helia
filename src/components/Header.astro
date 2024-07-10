@@ -7,20 +7,12 @@ import heliaLogo from "../images/Helia_web_H.png";
 
 <header>
   <div class="name-header">
-    <Image src={heliaLogo} width={300} alt="Helia Logo" />
+    <Hamburger />
+    <div style={{ height: "100px" }}>
+      <Image src={heliaLogo} width={250} alt="Helia Logo" class="responsive-image"/>
+    </div>
   </div>
   <nav>
-    <Hamburger />
     <Navigation />
   </nav>
 </header>
-
-<style>
-  .name-header {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 1rem;
-    align-items: center;
-  }
-</style>

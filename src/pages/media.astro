@@ -202,11 +202,6 @@ import emmaJulieSun from '../images/je-sun.jpg';
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
   }
-  .responsive-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
   .responsive-sun-image {
     width: 100%;
     height: auto;
@@ -222,14 +217,14 @@ import emmaJulieSun from '../images/je-sun.jpg';
     color: var(--accentLight);
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 768px) {
     .three-videos {
       grid-template-columns: repeat(2, 1fr);
       gap: 0.5rem;
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 640px) {
     .three-videos,
     .two-videos,
     .gallery {
