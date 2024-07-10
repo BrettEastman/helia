@@ -194,7 +194,6 @@ html.dark {
   justify-content: space-around;
   align-items: center;
   width: 800px;
-  max-width: 900px;
   background: none;
 }
 .nav-links a {
