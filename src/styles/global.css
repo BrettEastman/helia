@@ -192,21 +192,14 @@ html.dark {
 .nav-links {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 800px;
   max-width: 900px;
   background: none;
 }
-/* .nav-items {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-} */
 .nav-links a {
-  display: inline-block;
   padding: 15px 20px;
   color: var(--navText);
-  padding: 10px 0;
   text-decoration: none;
   font-size: 14px;
   text-transform: uppercase;
@@ -256,6 +249,7 @@ html.dark {
     flex-direction: column;
     font-weight: 400;
     width: 100%;
+    margin-bottom: 2rem;
     background-color: var(--primary100);
     z-index: 1;
   }
