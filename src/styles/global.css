@@ -37,7 +37,6 @@
 html {
   height: 100%;
   font-size: 16px;
-  font-family: system-ui, sans-serif;
   background: var(--primary100);
   background-size: 224px;
 }
