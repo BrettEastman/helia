@@ -10,16 +10,18 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astro-community/astro-embed-youtube": "^0.5.2",
     "@astrojs/check": "^0.7.0",
     "@fontsource-variable/montserrat": "^5.0.19",
     "@fontsource/lato": "^5.0.21",
     "astro": "^4.11.5",
+    "astro-lazy-youtube-embed": "^0.4.0",
     "pnpm": "^9.4.0",
     "sharp": "^0.33.4",
     "typescript": "^5.5.3"
   },
   "volta": {
     "node": "20.11.0",
-    "pnpm": "9.4.0"
+    "pnpm": "9.5.0"
   }
 }

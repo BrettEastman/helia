@@ -1,16 +1,15 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import YouTubeEmbed from '../components/YouTubeEmbed.astro';
-import Image from 'astro/components/Image.astro';
-import WindowPhoto from '../components/WindowPhoto.astro';
-import heliaSun from '../images/web-flower.png';
-import headshotEmma from '../images/emma.jpg';
-import headshotJulie from '../images/about-julie.jpg';
-import emmaJuliePath from '../images/je-path.jpg';
-import emmaJulieStairs from '../images/je-stairs.jpg';
-import emmaJulieTree from '../images/je-tree.jpg';
-import emmaJulieSun from '../images/je-sun.jpg';
-
+import Layout from "../layouts/Layout.astro";
+import YouTubeEmbed from "../components/YouTubeEmbed.astro";
+import Image from "astro/components/Image.astro";
+import WindowPhoto from "../components/WindowPhoto.astro";
+import heliaSun from "../images/web-flower.png";
+import headshotEmma from "../images/emma.jpg";
+import headshotJulie from "../images/about-julie.jpg";
+import emmaJuliePath from "../images/je-path.jpg";
+import emmaJulieStairs from "../images/je-stairs.jpg";
+import emmaJulieTree from "../images/je-tree.jpg";
+import emmaJulieSun from "../images/je-sun.jpg";
 ---
 
 <Layout title="Media">
@@ -19,144 +18,176 @@ import emmaJulieSun from '../images/je-sun.jpg';
       <WindowPhoto text="Media" />
     </section>
     <section class="section-one">
-      <h2 class='media-section-titles'>Videos</h2>
-      <p>Check out videos from our recent collaboration with <a href="https://www.jeffanderle.com/" target="_blank">Jeff Anderle</a> and the SFCM Clarinet Ensemble:</p>
+      <h2 class="media-section-titles">Videos</h2>
+      <p>
+        Check out videos from our recent collaboration with <a
+          href="https://www.jeffanderle.com/"
+          target="_blank">Jeff Anderle</a
+        > and the SFCM Clarinet Ensemble:
+      </p>
       <div class="three-videos">
         <YouTubeEmbed
-          src="https://www.youtube-nocookie.com/embed/d_LhSnni13s?si=MRgs0Rcbm-2ncxmW"
-          title="Three Spaces for 9 Clarinets - Shawne Anell Workman - performed by SFCM Clarinet Ensemble"
-          pieceName='Three Spaces for 9 Clarinets'
-          composer='Shawne Anell Workman'
+          videoId="d_LhSnni13s"
+          title="Three Spaces for 9 Clarinets"
+          composer="Shawne Anell Workman"
         />
         <YouTubeEmbed
-          src="https://www.youtube-nocookie.com/embed/IwmuaIhqhBU?si=17nf_lMtHApLVegp"
-          title="Mapping Out a Sky - Emma Logan - Performed by SFCM Clarinet Ensemble"
-          pieceName='Mapping Out a Sky'
-          composer='Emma Logan'
+          videoId="IwmuaIhqhBU"
+          title="Mapping Out a Sky"
+          composer="Emma Logan"
         />
         <YouTubeEmbed
-          src="https://www.youtube-nocookie.com/embed/5SrNIOKFkYw?si=woSyxcoe7s2eJIvo"
-          title="In Transit - Julie Barwick - performed by SFCM Clarinet Ensemble"
-          pieceName='In Transit'
-          composer='Julie Barwick'
+          videoId="5SrNIOKFkYw"
+          title="In Transit"
+          composer="Julie Barwick"
         />
       </div>
-      <hr></hr>
-      <p>Recordings from our collaboration with cellist <a href="https://www.natalieraneycello.com/" target="_blank">Natalie Raney</a>:</p>
-      <div class="two-videos">
-        <YouTubeEmbed
-          src="https://www.youtube-nocookie.com/embed/dIIa-KmwZwg?si=o1W3SHqM3Mhw5Rga"
-          title="Moments - Belinda Reynolds - performed by Natalie Raney"
-          pieceName='Moments'
-          composer='Belinda Reynolds'
-        />
-        <YouTubeEmbed
-          src="https://www.youtube-nocookie.com/embed/LtcTex_mB1k?si=wPUxXMHGe2L1cLki"
-          title="stringDefinition - Elizabeth A. Baker - performed by Natalie Raney"
-          pieceName='stringDefinition'
-          composer='The Honourable Elizabeth A. Baker'
-        />
-        <YouTubeEmbed
-          src="https://www.youtube-nocookie.com/embed/d4uMm1P8RFo?si=KVwdRAIP3MPs8EHk"
-          title="Desert Aesthetic - Emma Logan - performed by Natalie Raney"
-          pieceName='Desert Aesthetic'
-          composer='Emma Logan'
-        />
-        <YouTubeEmbed
-          src="https://www.youtube-nocookie.com/embed/-RWBSFAUopY?si=lySh23c8F_r9e6Vc"
-          title="Counterbalance - Julie Barwick - performed by Natalie Raney"
-          pieceName='Counterbalance'
-          composer='Julie Barwick'
-        />
-      </div>
-      <hr></hr>
-      <p>Recordings from our collaboration and concert with <a href="https://www.curiumtrio.com/" target="_blank">Curium Trio</a>:</p>
-      <div class="two-videos">
-        <YouTubeEmbed
-          src="https://www.youtube-nocookie.com/embed/LM6eE1A0kAI?si=iq_A4dYgoxKbP43k"
-          title="Radiant Gray - Emily Shisko - performed by Curium Trio (world premiere)"
-          pieceName='Radiant Gray'
-          composer='Emily Shisko'
-        />
-        <YouTubeEmbed
-          src="https://www.youtube-nocookie.com/embed/HZJfG1ewPXc?si=yiSf5UyZ3i3xsXwc"
-          title="Color Analysis from Japanese Silk Brocade - Emma Logan - performed by Curium Trio (world premiere)"
-          pieceName='Color Analysis from Japanese Silk Brocade'
-          composer='Emma Logan'
-        />
-        <YouTubeEmbed
-          src="https://www.youtube-nocookie.com/embed/OWtFbcxd76U?si=P9OQXLuwmHcUT5EC"
-          title="I … My Name - Julie Barwick - performed by Curium Trio (world premiere)"
-          pieceName='I … My Name'
-          composer='Julie Barwick'
-        />
-        <YouTubeEmbed
-          src="https://www.youtube-nocookie.com/embed/dFCRm-5pBuE?si=Fgm4BX0h51Kzhnm7"
-          title="Pale Yellow/Brilliant Blue - Jennifer Higdon - performed by Curium Trio"
-          pieceName='Pale Yellow/Brilliant Blue'
-          composer='Jennifer Higdon'
-        />
-      </div>
-      <hr></hr>
-      <p>Recordings from our collaboration and concert with Liason Ensemble:</p>
-      <div class="two-videos">
-        <YouTubeEmbed
-          src="https://www.youtube-nocookie.com/embed/3qmawaJyAig?si=8VTwBB12p3azHUKg"
-          title="In the Evening - Emma Logan - performed by Liaison Ensemble"
-          pieceName='In the Evening'
-          composer='Emma Logan'
-        />
-        <YouTubeEmbed
-          src="https://www.youtube-nocookie.com/embed/gXwtiOL3k1I?si=WewIhfD9GIzl_NBz"
-          title="Songs of Ice and Fire - Julie Barwick - performed by Liaison Ensemble"
-          pieceName='Songs of Ice and Fire'
-          composer='Julie Barwick'
-        />
-        <YouTubeEmbed
-          src="https://www.youtube-nocookie.com/embed/vaHyJvMlvoE?si=d2IsCnUbnBiC1xqn"
-          title="am burning, have burned, will burn - Emily Koh - performed by Liaison Ensemble"
-          pieceName='am burning, have burned, will burn'
-          composer="Emily Koh"
-        />
-        <YouTubeEmbed
-          src="https://www.youtube-nocookie.com/embed/OGZChzMuU_E?si=1m0lb7q5RBrwNlUZ"
-          title="Fragmented Lament - Lily Chen - performed by Liaison Ensemble"
-          pieceName='Fragmented Lament'
-          composer='Lily Chen'
-        />
-      </div>
-      <hr></hr>
-      <p>
-        Working with <a href="https://sirokoduo.com/" target="_blank">Siroko Duo</a> in preparation for Re:Ignite concert:
-      </p>
-      <div class="two-videos">
-        <YouTubeEmbed
-          src="https://www.youtube-nocookie.com/embed/ONKhoBH-Br8?si=j9oD8axLUlgWPqdD"
-          title="Siroko Duo Conversations with Composers: Julie Barwick"
-          pieceName=''
-        />
-        <YouTubeEmbed
-          src="https://www.youtube-nocookie.com/embed/ABUjaslJFy8?si=uz5l6yTVbpDpo_Eo"
-          title="Siroko Duo: Conversations with Emma Logan"
-        />
-      </div>
+      <hr />
     </section>
-    <section class="section-two">
-      <h2 class='media-section-titles'>Gallery</h2>
-      <div class="gallery">
-        <Image src={headshotEmma} width={500} alt="Headshot of Emma Logan" class="responsive-image" />
-        <Image src={headshotJulie} width={500} alt="Headshot of Julie Barwick" class="responsive-image" />
-        <Image src={emmaJuliePath} width={500} alt="Emma & Julie standing on the path at Land's End looking in different directions from each other" class="responsive-image" />
-        <Image src={emmaJulieSun} width={500} alt="Julie & Emma standing on a bridge with the sun rays shining up in the background" class="responsive-image" />
-        <Image src={emmaJulieTree} width={500} alt="Emma sitting on branch of tree with Julie standing on the ground next to and below her" class="responsive-image" />
-        <div>
-          <Image src={emmaJulieStairs} width={500} alt="Julie & Emma sitting on the stairs together, smiling" class="responsive-image" />
-          <Image src={heliaSun} alt="Helia Sun logo" class="responsive-sun-image" />
-        </div>
-      </div>
-    </section>
-  <main>
-</Layout>
+    <p>
+      Recordings from our collaboration with cellist <a
+        href="https://www.natalieraneycello.com/"
+        target="_blank">Natalie Raney</a
+      >:
+    </p>
+    <div class="two-videos">
+      <YouTubeEmbed
+        videoId="dIIa-KmwZwg"
+        title="Moments"
+        composer="Belinda Reynolds"
+      />
+      <YouTubeEmbed
+        videoId="LtcTex_mB1k"
+        title="stringDefinition"
+        composer="The Honourable Elizabeth A. Baker"
+      />
+      <YouTubeEmbed
+        videoId="d4uMm1P8RFo"
+        title="Desert Aesthetic"
+        composer="Emma Logan"
+      />
+      <YouTubeEmbed
+        videoId="-RWBSFAUopY"
+        title="Counterbalance"
+        composer="Julie Barwick"
+      />
+    </div>
+    <hr />
+  </main>
+  <p>
+    Recordings from our collaboration and concert with <a
+      href="https://www.curiumtrio.com/"
+      target="_blank">Curium Trio</a
+    >:
+  </p>
+  <div class="two-videos">
+    <YouTubeEmbed
+      videoId="LM6eE1A0kAI"
+      title="Radiant Gray"
+      composer="Emily Shisko"
+    />
+    <YouTubeEmbed
+      videoId="HZJfG1ewPXc"
+      title="Color Analysis from Japanese Silk Brocade"
+      composer="Emma Logan"
+    />
+    <YouTubeEmbed
+      videoId="OWtFbcxd76U"
+      title="I … My Name"
+      composer="Julie Barwick"
+    />
+    <YouTubeEmbed
+      videoId="dFCRm-5pBuE"
+      title="Pale Yellow/Brilliant Blue"
+      composer="Jennifer Higdon"
+    />
+  </div>
+  <hr /></Layout
+>
+<p>Recordings from our collaboration and concert with Liason Ensemble:</p>
+<div class="two-videos">
+  <YouTubeEmbed
+    videoId="3qmawaJyAig"
+    title="In the Evening"
+    composer="Emma Logan"
+  />
+  <YouTubeEmbed
+    videoId="gXwtiOL3k1I"
+    title="Songs of Ice and Fire"
+    composer="Julie Barwick"
+  />
+  <YouTubeEmbed
+    videoId="vaHyJvMlvoE"
+    title="am burning, have burned, will burn"
+    composer="Emily Koh"
+  />
+  <YouTubeEmbed
+    videoId="OGZChzMuU_E"
+    title="Fragmented Lament"
+    composer="Lily Chen"
+  />
+</div>
+<hr />
+<p>
+  Working with <a href="https://sirokoduo.com/" target="_blank">Siroko Duo</a> in
+  preparation for Re:Ignite concert:
+</p>
+<div class="two-videos">
+  <YouTubeEmbed
+    videoId="ONKhoBH-Br8"
+    title="Siroko Duo Conversations with Composers: Julie Barwick"
+  />
+  <YouTubeEmbed
+    videoId="ABUjaslJFy8"
+    title="Siroko Duo: Conversations with Emma Logan"
+  />
+</div>
+
+<section class="section-two">
+  <h2 class="media-section-titles">Gallery</h2>
+  <div class="gallery">
+    <Image
+      src={headshotEmma}
+      width={500}
+      alt="Headshot of Emma Logan"
+      class="responsive-image"
+    />
+    <Image
+      src={headshotJulie}
+      width={500}
+      alt="Headshot of Julie Barwick"
+      class="responsive-image"
+    />
+    <Image
+      src={emmaJuliePath}
+      width={500}
+      alt="Emma & Julie standing on the path at Land's End looking in different directions from each other"
+      class="responsive-image"
+    />
+    <Image
+      src={emmaJulieSun}
+      width={500}
+      alt="Julie & Emma standing on a bridge with the sun rays shining up in the background"
+      class="responsive-image"
+    />
+    <Image
+      src={emmaJulieTree}
+      width={500}
+      alt="Emma sitting on branch of tree with Julie standing on the ground next to and below her"
+      class="responsive-image"
+    />
+    <div>
+      <Image
+        src={emmaJulieStairs}
+        width={500}
+        alt="Julie & Emma sitting on the stairs together, smiling"
+        class="responsive-image"
+      />
+      <Image src={heliaSun} alt="Helia Sun logo" class="responsive-sun-image" />
+    </div>
+  </div>
+</section>
+<main></main>
 
 <style>
   .main-media {
@@ -165,11 +196,11 @@ import emmaJulieSun from '../images/je-sun.jpg';
     align-items: center;
   }
   .hero {
-		width: 100vw;
-		position: relative;
+    width: 100vw;
+    position: relative;
     z-index: 1;
     margin-bottom: 1rem;
-	}
+  }
   .section-one {
     margin-bottom: 2rem;
     max-width: 1000px;

@@ -1,12 +1,12 @@
 ---
-import '../styles/global.css';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import '@fontsource-variable/montserrat';
-import '@fontsource/lato';
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import "@fontsource-variable/montserrat";
+import "@fontsource/lato";
 
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -14,52 +14,59 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Helia is a New Music collective co-founded by Julie Barwick and Emma Logan" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<div class="outer-screen">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Helia is a New Music collective co-founded by Julie Barwick and Emma Logan"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class="outer-screen">
       <div class="header-div">
         <Header />
       </div>
-			<main class="main-element">
-				<slot />
-			</main>
-			<Footer />
-			<script>
-				import "../scripts/menu.js"
-			</script>
+      <main class="main-element">
+        <slot />
+      </main>
+      <Footer />
+      <script>
+        import "../scripts/menu.js";
+      </script>
     </div>
-	</body>
+  </body>
 </html>
 
 <style>
-	.main-element {
-		display: flex;
-		flex-direction: column;
-		flex-grow: 1;
-		font-family: "Montserrat Variable", sans-serif;
-	}
-	.outer-screen {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-		align-items: center;
-	}
-	.header-div {
-		background-color: transparent;
-		margin-bottom: 1rem;
-		padding-top: 10px;
-		z-index: 50;
-	}
-	@media (max-width: 768px) {
-		.header-div {
-			margin-bottom: 0;
-		}
-	}
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat Variable", sans-serif;
+  }
+  .main-element {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .outer-screen {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+  }
+  .header-div {
+    background-color: transparent;
+    margin-bottom: 1rem;
+    padding-top: 10px;
+    z-index: 50;
+  }
+  @media (max-width: 768px) {
+    .header-div {
+      margin-bottom: 0;
+    }
+  }
 </style>

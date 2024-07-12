@@ -1,10 +1,10 @@
 ---
-import { Image } from 'astro:assets';
-import Layout from '../layouts/Layout.astro';
-import aboutUs from '../images/je-us.png';
-import headshotEmma from '../images/emma.jpg';
-import headshotJulie from '../images/about-julie.jpg';
-import collaborators from '../images/helia-siroko-mar25-2017.jpg';
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import aboutUs from "../images/je-us.png";
+import headshotEmma from "../images/emma.jpg";
+import headshotJulie from "../images/about-julie.jpg";
+import collaborators from "../images/helia-siroko-mar25-2017.jpg";
 
 const pageTitle = "About";
 ---
@@ -12,134 +12,294 @@ const pageTitle = "About";
 <Layout title={pageTitle}>
   <main>
     <section>
-      <Image src={aboutUs} width={912} alt="Emma & Julie" class="responsive-image" />
+      <Image
+        src={aboutUs}
+        width={912}
+        alt="Emma & Julie"
+        class="responsive-image"
+      />
       <div>
         <h4 class="subtitle">About Helia Music Collective</h4>
       </div>
       <p>
-        Co-founded by musician/composers, Emma Logan and Julie Barwick, Helia Music Collective supports the creative endeavors of women in music throughout the San Francisco Bay Area. Helia Music seeks to enrich the community and expand the engagement of women artists through educational outreach and collaborations, with performances and workshops taking place in unique and diverse spaces. Through charitable activities and events, Helia supports the education and development of women in the Bay Area and beyond.
+        Co-founded by musician/composers, Emma Logan and Julie Barwick, Helia
+        Music Collective supports the creative endeavors of women in music
+        throughout the San Francisco Bay Area. Helia Music seeks to enrich the
+        community and expand the engagement of women artists through educational
+        outreach and collaborations, with performances and workshops taking
+        place in unique and diverse spaces. Through charitable activities and
+        events, Helia supports the education and development of women in the Bay
+        Area and beyond.
       </p>
     </section>
     <section>
       <h4 class="subtitle">Who We Are</h4>
       <div class="two-images">
         <div>
-          <Image src={headshotEmma} width={441} alt="Headshot of Emma Logan" class="responsive-image" />
+          <Image
+            src={headshotEmma}
+            width={441}
+            alt="Headshot of Emma Logan"
+            class="responsive-image"
+          />
           <p class="subtitle">Emma Logan</p>
           <p>
-            San Francisco-based composer <a href="https://www.emmalogan.com/" target="_blank">Emma Logan</a> (b. 1990) writes music that is emotionally compelling through the use of gesture, experimentation, and storytelling. Her piece, Three Sisters for flute trio, was selected as a finalist in the 2017 ASCAP Morton Gould Young Composer Awards. Emma’s passion for contemporary music drives her to continue collaborating with fellow composers and performers to bring new music to life.
-            <br>
-            <br>
-            Emma is co-founder of the Helia Music Collective, an organization dedicated to promoting women in music. Helia's first project was in collaboration with Siroko Duo in March 2017, featuring new and recent works by women for flute duo. Emma is also a curator for San Francisco’s <a href="https://centerfornewmusic.com/" target="_blank">Center for New Music</a> and will present concerts for the 2017 and 2018 seasons. In addition to her creative endeavors, Emma is passionate about arts administration. She is currently the Operations Manager at the San Francisco Symphony.
-            <br>
-            <br>
-            Upcoming collaborations include a commission by <a href="https://www.miolinanyc.com/info" target="_blank">Miolina Duo</a>, curating a concert with Elevate Ensemble, and curating a series of electro-acoustic music called Alone/Not Alone. Past collaborations include commissions by One Great City Duo, <a href="https://sirokoduo.com/" target="_blank">Siroko Duo</a>, <a href="https://www.e4tt.org/" target="_blank">Ensemble for These Times</a>, and <a href="https://areonflutes.com/" target="_blank">Areon Flutes</a> with the Guerrilla Composers Guild.
-            <br>
-            <br>
-            Emma has worked with musicians and ensembles across the United States, including Inbal Segev, Opera Theater Unlimited, Fifth House Ensemble, Areon Flutes, the Guerrilla Composers Guild, Aki Tsuyuko, Jane Rigler, One Great City Duo, Ensemble for These Times, Siroko Duo, Fog City Duo, and Emblems Quintet. She has participated in the Oregon Bach Festival Composers Symposium with composer Robert Kyr, the Fresh Inc Music Festival with Fifth House Ensemble, and the Skaneateles Music Festival with composer Paul Moravec. Emma studied with David Garner at the San Francisco Conservatory of Music (MM) and with Andrew Waggoner, Daniel S. Godfrey, and Nicholas Scherzinger at Syracuse University (BM).
+            San Francisco-based composer <a
+              href="https://www.emmalogan.com/"
+              target="_blank">Emma Logan</a
+            > (b. 1990) writes music that is emotionally compelling through the use
+            of gesture, experimentation, and storytelling. Her piece, Three Sisters
+            for flute trio, was selected as a finalist in the 2017 ASCAP Morton Gould
+            Young Composer Awards. Emma’s passion for contemporary music drives her
+            to continue collaborating with fellow composers and performers to bring
+            new music to life.
+            <br />
+            <br />
+            Emma is co-founder of the Helia Music Collective, an organization dedicated
+            to promoting women in music. Helia's first project was in collaboration
+            with Siroko Duo in March 2017, featuring new and recent works by women
+            for flute duo. Emma is also a curator for San Francisco’s <a
+              href="https://centerfornewmusic.com/"
+              target="_blank">Center for New Music</a
+            > and will present concerts for the 2017 and 2018 seasons. In addition
+            to her creative endeavors, Emma is passionate about arts administration.
+            She is currently the Operations Manager at the San Francisco Symphony.
+            <br />
+            <br />
+            Upcoming collaborations include a commission by <a
+              href="https://www.miolinanyc.com/info"
+              target="_blank">Miolina Duo</a
+            >, curating a concert with Elevate Ensemble, and curating a series
+            of electro-acoustic music called Alone/Not Alone. Past
+            collaborations include commissions by One Great City Duo, <a
+              href="https://sirokoduo.com/"
+              target="_blank">Siroko Duo</a
+            >, <a href="https://www.e4tt.org/" target="_blank"
+              >Ensemble for These Times</a
+            >, and <a href="https://areonflutes.com/" target="_blank"
+              >Areon Flutes</a
+            > with the Guerrilla Composers Guild.
+            <br />
+            <br />
+            Emma has worked with musicians and ensembles across the United States,
+            including Inbal Segev, Opera Theater Unlimited, Fifth House Ensemble,
+            Areon Flutes, the Guerrilla Composers Guild, Aki Tsuyuko, Jane Rigler,
+            One Great City Duo, Ensemble for These Times, Siroko Duo, Fog City Duo,
+            and Emblems Quintet. She has participated in the Oregon Bach Festival
+            Composers Symposium with composer Robert Kyr, the Fresh Inc Music Festival
+            with Fifth House Ensemble, and the Skaneateles Music Festival with composer
+            Paul Moravec. Emma studied with David Garner at the San Francisco Conservatory
+            of Music (MM) and with Andrew Waggoner, Daniel S. Godfrey, and Nicholas
+            Scherzinger at Syracuse University (BM).
           </p>
         </div>
         <div>
           <div>
-            <Image src={headshotJulie} width={441} alt="Headshot of Julie Barwick" class="responsive-image" />
+            <Image
+              src={headshotJulie}
+              width={441}
+              alt="Headshot of Julie Barwick"
+              class="responsive-image"
+            />
             <p class="subtitle">Julie Barwick</p>
           </div>
           <p>
-            <a href="https://www.juliebarwick.com/" target="_blank">Julie Barwick</a> (b. 1983) is a composer and pianist originally from Southern California and now based in San Francisco. Drawing inspiration from her classical and jazz background, she not only enjoys writing for traditional chamber music ensembles, but also non-traditional ensembles as well as experimental jazz groups.
-            <br>
-            <br>
-            Julie was most recently Composer-in-Residence for Elevate Ensemble and was commissioned to write two pieces for their 2017-18 season.​ She was also a winner of the 2016 Areon International Composition Competition. Other recent commissions were from Hot Air Music Festival, San Francisco Guitar Quartet, <a href="https://sirokoduo.com/" target="_blank">Siroko Duo</a>, Carla Fabris, <a href="https://www.jillmorganbrenner.com/" target="_blank">Jill Morgan Brenner</a>, Andronica Trio, and Ignition Duo with the Guerrilla Composers Guild. Her music has been performed throughout the Bay Area and US, and has been selected for performances on festivals such as West Fork New Music Festival in West Virginia, and the <a href="https://www.verdantvibes.com/index.html" target="_blank">Verdant Vibes Concert Series</a> in Rhode Island.
-            <br>
-            <br>
-            As co-founder of Helia Music Collective, she believes strongly in supporting women in music especially through collaborations with Bay Area ensembles and composers. Helia most recently had their second successful collaboration with Liaison Ensemble in October, and is currently in preparations for another collaboration (TBA) to take place in Fall 2019.
-            <br>
-            <br>
-            Julie received her B.A. in music from the University of California, Berkeley and her M.M. in music composition from the San Francisco Conservatory of Music. She has studied with composers Belinda Reynolds, Dan Becker, David Garner, Cindy Cox, and Henry Threadgill.
+            <a href="https://www.juliebarwick.com/" target="_blank"
+              >Julie Barwick</a
+            > (b. 1983) is a composer and pianist originally from Southern California
+            and now based in San Francisco. Drawing inspiration from her classical
+            and jazz background, she not only enjoys writing for traditional chamber
+            music ensembles, but also non-traditional ensembles as well as experimental
+            jazz groups.
+            <br />
+            <br />
+            Julie was most recently Composer-in-Residence for Elevate Ensemble and
+            was commissioned to write two pieces for their 2017-18 season.​ She was
+            also a winner of the 2016 Areon International Composition Competition.
+            Other recent commissions were from Hot Air Music Festival, San Francisco
+            Guitar Quartet, <a href="https://sirokoduo.com/" target="_blank"
+              >Siroko Duo</a
+            >, Carla Fabris, <a
+              href="https://www.jillmorganbrenner.com/"
+              target="_blank">Jill Morgan Brenner</a
+            >, Andronica Trio, and Ignition Duo with the Guerrilla Composers
+            Guild. Her music has been performed throughout the Bay Area and US,
+            and has been selected for performances on festivals such as West
+            Fork New Music Festival in West Virginia, and the <a
+              href="https://www.verdantvibes.com/index.html"
+              target="_blank">Verdant Vibes Concert Series</a
+            > in Rhode Island.
+            <br />
+            <br />
+            As co-founder of Helia Music Collective, she believes strongly in supporting
+            women in music especially through collaborations with Bay Area ensembles
+            and composers. Helia most recently had their second successful collaboration
+            with Liaison Ensemble in October, and is currently in preparations for
+            another collaboration (TBA) to take place in Fall 2019.
+            <br />
+            <br />
+            Julie received her B.A. in music from the University of California, Berkeley
+            and her M.M. in music composition from the San Francisco Conservatory
+            of Music. She has studied with composers Belinda Reynolds, Dan Becker,
+            David Garner, Cindy Cox, and Henry Threadgill.
           </p>
+        </div>
       </div>
+      <hr />
     </section>
-    <hr></hr>
     <section>
       <h4 class="subtitle">Collaborators</h4>
-      <Image src={collaborators} width={639} alt="Helia Music Collective at Siroko Duo concert" class="responsive-image" />
-      <p class="caption">Re:Ignite: Helia Music Collective & Siroko Duo concert in March 2017 (photo by Meerenai Shim)</p>
+      <Image
+        src={collaborators}
+        width={639}
+        alt="Helia Music Collective at Siroko Duo concert"
+        class="responsive-image"
+      />
+      <p class="caption">
+        Re:Ignite: Helia Music Collective & Siroko Duo concert in March 2017
+        (photo by Meerenai Shim)
+      </p>
       <h5 class="categories">Composers</h5>
       <ul>
-        <li><a href="https://www.chelsealoew.com/" target="_blank">Chelsea Loew</a></li>
-        <li><a href="https://janerigler.com/" target="_blank">Jane Rigler</a></li>
-        <li><a href="https://www.adjectivenewmusic.com/hudelson.html" target="_blank">Brandy Hudelson</a></li>
+        <li>
+          <a href="https://www.chelsealoew.com/" target="_blank"
+            >Chelsea Loew</a>
+        </li>
+        <li>
+          <a href="https://janerigler.com/" target="_blank">Jane Rigler</a>
+        </li>
+        <li>
+          <a
+            href="https://www.adjectivenewmusic.com/hudelson.html"
+            target="_blank">Brandy Hudelson</a>
+        </li>
         <li><a href="https://chenlily.com/" target="_blank">Lily Chen</a></li>
-        <li><a href="https://www.emilykoh.net/" target="_blank">Emily Koh</a></li>
-        <li><a href="https://emilyshisko.wordpress.com/" target="_blank">Emily Shisko</a></li>
-        <li><a href="https://heshemusic.com/pages/belinda-reynolds" target="_blank">Belinda Reynolds</a></li>
-        <li><a href="https://elizabethabaker.com/" target="_blank">The Honourable Elizabeth A. Baker</a></li>
-        <li><a href="https://www.theresawong.org/" target="_blank">Theresa Wong</a></li>
-        <li><a href="https://saworkman.com/" target="_blank">Shawne Anell Workman</a></li>
+        <li>
+          <a href="https://www.emilykoh.net/" target="_blank">Emily Koh</a>
+        </li>
+        <li>
+          <a href="https://emilyshisko.wordpress.com/" target="_blank"
+            >Emily Shisko</a>
+        </li>
+        <li>
+          <a
+            href="https://heshemusic.com/pages/belinda-reynolds"
+            target="_blank">Belinda Reynolds</a>
+        </li>
+        <li>
+          <a href="https://elizabethabaker.com/" target="_blank"
+            >The Honourable Elizabeth A. Baker</a>
+        </li>
+        <li>
+          <a href="https://www.theresawong.org/" target="_blank"
+            >Theresa Wong</a>
+        </li>
+        <li>
+          <a href="https://saworkman.com/" target="_blank"
+            >Shawne Anell Workman</a>
+        </li>
       </ul>
       <h5 class="categories">Performers</h5>
       <ul>
-        <li><a href="https://www.jeffanderle.com/" target="_blank">Jeff Anderle</a> | <a href="https://sfcm.edu/study/ensembles/clarinet-ensemble" target="_blank">SFCM Clarinet Ensemble</a></li>
-        <li><a href="https://www.natalieraneycello.com/" target="_blank">Natalie Raney</a></li>
+        <li>
+          <a href="https://www.jeffanderle.com/" target="_blank">Jeff Anderle</a
+          > | <a
+            href="https://sfcm.edu/study/ensembles/clarinet-ensemble"
+            target="_blank">SFCM Clarinet Ensemble</a>
+        </li>
+        <li>
+          <a href="https://www.natalieraneycello.com/" target="_blank"
+            >Natalie Raney</a>
+        </li>
         <li><a href="https://sirokoduo.com/" target="_blank">Siroko Duo</a></li>
-        <li><a href="https://www.curiumtrio.com/" target="_blank">Curium Trio</a></li>
-        <li><a href="https://intermusicsf.org/affiliate/liaison-ensemble/" target="_blank">Liason Ensemble</a></li>
-        <li><a href="https://roberthuntsimonds.com/" target="_blank">Robert Hunt Simonds</a></li>
+        <li>
+          <a href="https://www.curiumtrio.com/" target="_blank">Curium Trio</a>
+        </li>
+        <li>
+          <a
+            href="https://intermusicsf.org/affiliate/liaison-ensemble/"
+            target="_blank">Liason Ensemble</a>
+        </li>
+        <li>
+          <a href="https://roberthuntsimonds.com/" target="_blank"
+            >Robert Hunt Simonds</a>
+        </li>
         <li><a href="https://ltingarts.com/" target="_blank">Ting Luo</a></li>
       </ul>
       <h5 class="categories">Venues</h5>
       <ul>
-        <li><a href="https://centerfornewmusic.com/" target="_blank">Center For New Music</a></li>
-        <li><a href="https://www.sevenperforms.org/" target="_blank">Seventh Avenue Performances</a></li>
-        <li><a href="https://www.oldfirstconcerts.org/" target="_blank">Old First Concerts</a></li>
-        <li><a href="https://sfcm.edu/" target="_blank">San Francisco Conservatory of Music</a></li>
+        <li>
+          <a href="https://centerfornewmusic.com/" target="_blank"
+            >Center For New Music</a>
+        </li>
+        <li>
+          <a href="https://www.sevenperforms.org/" target="_blank"
+            >Seventh Avenue Performances</a>
+        </li>
+        <li>
+          <a href="https://www.oldfirstconcerts.org/" target="_blank"
+            >Old First Concerts</a>
+        </li>
+        <li>
+          <a href="https://sfcm.edu/" target="_blank"
+            >San Francisco Conservatory of Music</a>
+        </li>
       </ul>
       <h5 class="categories">Photography by:</h5>
       <ul>
-        <li><a href="https://www.instagram.com/ericvogler/" target="_blank">Eric Vogler</a></li>
+        <li>
+          <a href="https://www.instagram.com/ericvogler/" target="_blank"
+            >Eric Vogler</a>
+        </li>
       </ul>
       <h5 class="categories">Website developed by:</h5>
       <ul>
-        <li><a href="https://www.bretteastman.dev/" target="_blank">Brett Eastman</a></li>
+        <li>
+          <a href="https://www.bretteastman.dev/" target="_blank"
+            >Brett Eastman</a>
+        </li>
       </ul>
-  <main>
-</Layout>
+      <main></main>
 
-<style>
-  main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    max-width: 912px;
-    margin-bottom: 2rem;
-    margin: 0 2rem;
-    padding-bottom: 1rem;
-  }
-  .two-images {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    padding-bottom: 2rem;
-  }
-  a {
-    color: var(--accentDark);
-    text-decoration: none;
-  }
-  a:hover {
-    color: var(--accentLight);
-  }
-  .caption {
-    font-size: 0.8rem;
-    font-style: italic;
-    color: var(--subtitleText);
-  }
-  hr {
-    border: 1px solid var(--navText);
-  }
+      <style>
+        main {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: left;
+          max-width: 912px;
+          margin-bottom: 2rem;
+          margin: 0 2rem;
+          padding-bottom: 1rem;
+        }
+        .two-images {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1rem;
+          padding-bottom: 2rem;
+        }
+        a {
+          color: var(--accentDark);
+          text-decoration: none;
+        }
+        a:hover {
+          color: var(--accentLight);
+        }
+        .caption {
+          font-size: 0.8rem;
+          font-style: italic;
+          color: var(--subtitleText);
+        }
+        hr {
+          border: 1px solid var(--navText);
+        }
 
-  @media screen and (max-width: 636px) {
-    .two-images {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>
+        @media screen and (max-width: 636px) {
+          .two-images {
+            grid-template-columns: 1fr;
+          }
+        }
+      </style>
+    </section>
+  </main></Layout
+>

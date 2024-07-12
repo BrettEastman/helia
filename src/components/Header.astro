@@ -1,6 +1,6 @@
 ---
-import Navigation from "./Navigation.astro"
-import Hamburger from "./Hamburger.astro"
+import Navigation from "./Navigation.astro";
+import Hamburger from "./Hamburger.astro";
 import { Image } from "astro:assets";
 import heliaLogo from "../images/Helia_web_H.png";
 ---
@@ -9,7 +9,12 @@ import heliaLogo from "../images/Helia_web_H.png";
   <div class="name-header">
     <Hamburger />
     <div style={{ height: "100px" }}>
-      <Image src={heliaLogo} width={250} alt="Helia Logo" class="responsive-image"/>
+      <Image
+        src={heliaLogo}
+        width={250}
+        alt="Helia Logo"
+        class="responsive-image"
+      />
     </div>
   </div>
   <nav>

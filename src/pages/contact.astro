@@ -1,42 +1,43 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import imageData from "../images/je-stairs.jpg";
-
 ---
 
 <Layout title="Contact">
   <main>
-    <Image src={imageData} width={750} alt='Julie & Emma sitting on the steps, smiling' class="responsive-image"/>
+    <Image
+      src={imageData}
+      width={750}
+      alt="Julie & Emma sitting on the steps, smiling"
+      class="responsive-image"
+    />
     <div>
       <h4 class="contact-title">Contact Us</h4>
     </div>
     <h6 class="contact-subtitle">Email Address</h6>
-    <p>
-      heliamusiccollective [at] gmail [dot] com
-    </p>
+    <p>heliamusiccollective [at] gmail [dot] com</p>
     <h6 class="contact-subtitle">Location</h6>
-    <p>
-      We are based in San Francisco.
-    </p>
-  <main>
-</Layout>
+    <p>We are based in San Francisco.</p>
+    <main></main>
 
-<style>
-  main {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-  }
-  .contact-subtitle {
-    font-size: 1rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    padding-top: 14px;
-  }
-  p {
-    color: var(--primary50);
-    font-size: 1rem;
-    font-weight: 300;
-  }
-</style>
+    <style>
+      main {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+      .contact-subtitle {
+        font-size: 1rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        padding-top: 14px;
+      }
+      p {
+        color: var(--primary50);
+        font-size: 1rem;
+        font-weight: 300;
+      }
+    </style>
+  </main></Layout
+>

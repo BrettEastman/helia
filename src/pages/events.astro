@@ -1,12 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import CardEvent from '../components/CardEvent.astro';
-import events from '../data/events'
+import CardEvent from "../components/CardEvent.astro";
+import events from "../data/events";
 import { Image } from "astro:assets";
 import imageData from "../images/je-rocks.jpg";
-import WindowPhoto from '../components/WindowPhoto.astro';
+import WindowPhoto from "../components/WindowPhoto.astro";
 const pageTitle = "Events";
 ---
+
 <Layout title={pageTitle}>
   <main>
     <section class="banner-title">
@@ -15,18 +16,20 @@ const pageTitle = "Events";
     <section class="events-list">
       <h2 class="media-section-titles">Past Events</h2>
       <div>
-        {events.map((event) => (
-          <div>
-            <CardEvent
-              eventTitle={event.title}
-              concertDate={event.concertDate}
-              venue={event.venue}
-              venueAddress={event.venueAddress}
-              city={event.city}
-              eventDescription={event.description}
-            />
-          </div>
-        ))}
+        {
+          events.map((event) => (
+            <div>
+              <CardEvent
+                eventTitle={event.title}
+                concertDate={event.concertDate}
+                venue={event.venue}
+                venueAddress={event.venueAddress}
+                city={event.city}
+                eventDescription={event.description}
+              />
+            </div>
+          ))
+        }
       </div>
       <div class="image-events">
         <Image
@@ -42,15 +45,15 @@ const pageTitle = "Events";
 
 <style>
   main {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .banner-title {
-		width: 100vw;
-		position: relative;
+    width: 100vw;
+    position: relative;
     z-index: 1;
-	}
+  }
   .events-list {
     display: flex;
     flex-direction: column;
@@ -59,7 +62,7 @@ const pageTitle = "Events";
     margin: 0 2rem;
   }
   h2 {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-size: 2.25rem;
     font-weight: 300;
     margin-bottom: 1.25rem;

@@ -1,40 +1,34 @@
 ---
+import { YouTube } from "astro-lazy-youtube-embed";
+
 interface Props {
-  width?: string;
-  height?: string;
-  src: string;
+  videoId: string;
   title: string;
-  pieceName?: string;
   composer?: string;
 }
 
-const { width = '100%', height = '100%', src, title, pieceName, composer } = Astro.props
+const { videoId, title, composer } = Astro.props;
 ---
 
 <div class="stack">
-  <div class="video-container">
-    <iframe
-      width={width}
-      height={height}
-      src={src}
-      title={title}
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    />
-  </div>
-  {pieceName && composer && <p><em>{pieceName}</em> - {composer}</p>}
-  {pieceName && !composer && <p><em>{pieceName}</em></p>}
-  {!pieceName && composer && <p>{composer}</p>}
-  {!pieceName && !composer && <p>{title}</p>}
+  <YouTube title={title} videoId={videoId} />
+  {
+    title && composer && (
+      <p>
+        <em>{title}</em> - {composer}
+      </p>
+    )
+  }
+  {
+    title && !composer && (
+      <p>
+        <em>{title}</em>
+      </p>
+    )
+  }
 </div>
 
 <style>
-  .video-container {
-    aspect-ratio: 16 / 9;
-  }
-  iframe {
-    border: none;
-  }
   .stack {
     display: flex;
     flex-direction: column;
