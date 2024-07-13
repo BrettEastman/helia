@@ -2,15 +2,20 @@
 const { text } = Astro.props;
 ---
 
-<div class="container">
-  <section class="window-container">
-    <div class="foreground-content">
-      <h1>{text}</h1>
-    </div>
-  </section>
+<div class="background-wrapper">
+  <div class="container">
+    <section class="window-container">
+      <div class="foreground-content">
+        <h1>{text}</h1>
+      </div>
+    </section>
+  </div>
 </div>
 
 <style>
+  .background-wrapper {
+    position: relative;
+  }
   .container {
     margin: 0;
     padding: 0;
@@ -58,6 +63,7 @@ const { text } = Astro.props;
   @media screen and (min-width: 768px) {
     .window-container {
       height: 450px;
+      background-position: fixed;
     }
     .foreground-content {
       height: 169px;
