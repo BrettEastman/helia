@@ -30,12 +30,12 @@ const { text } = Astro.props;
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 350px;
+    height: 300px;
     width: 100%;
     overflow: hidden;
     background-image: url("https://helia-20ac0.kxcdn.com/SF-ocean-beach-bg.jpg");
     background-repeat: no-repeat;
-    /* background-position: bottom; */
+    background-position: fixed;
     background-size: cover;
     background-attachment: fixed;
   }
@@ -63,7 +63,7 @@ const { text } = Astro.props;
   @media screen and (min-width: 768px) {
     .window-container {
       height: 450px;
-      background-position: fixed;
+      /* background-position: fixed; */
     }
     .foreground-content {
       height: 169px;
