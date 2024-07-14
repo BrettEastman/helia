@@ -93,6 +93,7 @@ footer {
   color: var(--primary30);
   background-color: var(--footerBackground);
   text-align: center;
+  z-index: -1;
 }
 
 .socials {
