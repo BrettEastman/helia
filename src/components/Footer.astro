@@ -1,4 +1,6 @@
 ---
+import Social from "./Social.astro";
+
 const socials = [
   { platform: "facebook", username: "heliamusiccollective" },
   { platform: "instagram", username: "heliamusiccollective" },
@@ -10,13 +12,7 @@ const socials = [
   <div class="socials">
     {
       socials.map((social) => (
-        <a
-          class="platforms"
-          href={`https://www.${social.platform}.com/${social.username}/`}
-          target="_blank"
-        >
-          {social.platform}
-        </a>
+        <Social platform={social.platform} username={social.username} />
       ))
     }
   </div>
@@ -26,7 +22,7 @@ const socials = [
 <script>
   const copyright = document.getElementById("copyright");
   if (copyright) {
-    copyright.innerHTML = `Copyright ©${new Date().getFullYear()} Helia Music Collective`;
+    copyright.innerHTML = `Copyright © ${new Date().getFullYear()} Helia Music Collective`;
   }
 </script>
 

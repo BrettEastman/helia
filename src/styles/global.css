@@ -93,7 +93,6 @@ footer {
   color: var(--primary30);
   background-color: var(--footerBackground);
   text-align: center;
-  z-index: -1;
 }
 
 .socials {
@@ -104,13 +103,15 @@ footer {
 
 .platforms {
   padding: 0.5rem 1rem;
-  color: var(--primary100);
-  background-color: var(--icon);
+  background-color: transparent;
+  color: var(--icon);
   text-decoration: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 .socials a:hover {
-  background-color: var(--logoAccent);
+  color: var(--logoAccent);
 }
 
 .contact-title {
@@ -176,12 +177,11 @@ html.dark {
   font-weight: 500;
 }
 .dark .platforms {
-  color: var(--primary20);
-  background-color: var(--primary40);
-  font-weight: 500;
+  color: var(--primary60);
+  background-color: var(--primary20);
 }
 .dark .platforms:hover {
-  background-color: var(--primary60);
+  color: var(--primary30);
 }
 .dark .contact-title {
   color: var(--primary80);
