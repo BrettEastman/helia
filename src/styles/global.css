@@ -207,9 +207,15 @@ html.dark {
 }
 .nav-links a:hover,
 .nav-links a:focus {
+  background-color: var(--logoAccent);
+  color: var(--primary90);
+}
+.dark .nav-links a:hover,
+.dark .nav-links a:focus {
   background-color: var(--primary30);
   color: var(--accentDark);
 }
+
 .hamburger {
   display: none;
 }
