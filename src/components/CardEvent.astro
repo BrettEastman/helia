@@ -7,7 +7,6 @@ interface Props {
   city: string;
   artistPhoto?: string;
   photoCaption?: string;
-  eventDescription: string;
 }
 
 const {
@@ -18,7 +17,6 @@ const {
   city,
   artistPhoto,
   photoCaption,
-  eventDescription,
 } = Astro.props;
 ---
 
@@ -33,9 +31,6 @@ const {
     <p>{city}</p>
   </div>
   {artistPhoto && <img src={artistPhoto} alt={photoCaption} />}
-  <p class="description">
-    {eventDescription}
-  </p>
 </div>
 
 <style>
@@ -54,8 +49,5 @@ const {
   .location {
     margin-bottom: 0.75rem;
   }
-  .description {
-    max-width: 900px;
-    margin-bottom: 1.5rem;
-  }
+
 </style>

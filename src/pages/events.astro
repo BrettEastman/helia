@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import CardEvent from "../components/CardEvent.astro";
-import events from "../data/events";
 import { Image } from "astro:assets";
 import imageData from "../images/je-rocks.jpg";
 import WindowPhoto from "../components/WindowPhoto.astro";
@@ -16,21 +15,213 @@ const pageTitle = "Events";
     <section class="events-list">
       <h2 class="media-section-titles">Past Events</h2>
       <div>
-        {
-          events.map((event) => (
-            <div>
-              <CardEvent
-                eventTitle={event.title}
-                concertDate={event.concertDate}
-                venue={event.venue}
-                venueAddress={event.venueAddress}
-                city={event.city}
-                eventDescription={event.description}
-              />
-            </div>
-          ))
-        }
+        <CardEvent
+          eventTitle={"Return: ​Helia & SFCM Clarinet Ensemble"}
+          concertDate={"Wednesday, March 23, 2022, 7:30pm"}
+          venue={"San Francisco Conservatory of Music – Concert Hall"}
+          venueAddress={"50 Oak Street"}
+          city={"San Francisco"}
+        /><p class="description">
+          Helia combines forces with <a
+            href="https://www.jeffanderle.com/"
+            target="_blank">Jeff Anderle</a
+          > and the <a
+          href="https://sfcm.edu/study/ensembles/clarinet-ensemble"
+          target="_blank">SFCM Clarinet Ensemble</a> to premiere four newly-commissioned large
+          clarinet ensemble works by composers <a href="https://www.theresawong.org/" target="_blank"
+          >Theresa Wong</a>, <a href="https://saworkman.com/" target="_blank"
+          >Shawne Anell Workman</a>, <a
+            href="https://www.emmalogan.com/"
+            target="_blank">Emma Logan</a
+          >, and <a href="https://www.juliebarwick.com/" target="_blank"
+            >Julie Barwick</a
+          >.
+        </p>
       </div>
+      <div>
+        <CardEvent
+          eventTitle={`Helia & Natalie Raney present "Catalyst: A Musical Collaboration"`}
+          concertDate={"September 4, 2020, 8:00pm"}
+          venue={"Live-streamed by Center for New Music"}
+          venueAddress={"55 Taylor Street"}
+          city={"San Francisco"}
+        /><p class="description">
+          Helia and cellist, <a
+            href="https://www.natalieraneycello.com/"
+            target="_blank">Natalie Raney</a
+          >, team up to present a vivid program of new and established works
+          written by women for solo cello, each piece drawing inspiration from
+          spring and nature.
+        </p>
+      </div>
+      <div>
+        <CardEvent
+          eventTitle={`Curium & Helia revisit "Color Through Music" at Hot Air Music Festival 2020`}
+          concertDate={"March 1 2020, Session 3 (4:30 - 6:30 pm)"}
+          venue={"San Francisco Conservatory of Music - Recital Hall"}
+          venueAddress={"50 Oak Street"}
+          city={"San Francisco"}
+        /><p class="description">
+          Helia Music Collective and <a
+            href="https://www.curiumtrio.com/"
+            target="_blank">Curium Trio</a
+          > revisit their collaboration, "Color Through Music," featuring three new
+          works by Bay Area composers <a href="https://emilyshisko.wordpress.com/" target="_blank"
+          >Emily Shisko</a>, <a
+            href="https://www.juliebarwick.com/"
+            target="_blank">Julie Barwick</a
+          >, and <a href="https://www.emmalogan.com/" target="_blank"
+            >Emma Logan</a
+          >.
+        </p>
+      </div>
+      <div>
+        <CardEvent
+          eventTitle={`Helia & Robert Simonds at Old First Concerts`}
+          concertDate={"November 1, 2019, 8:00pm"}
+          venue={"Old First Church"}
+          venueAddress={"1751 Sacramento Street"}
+          city={"San Francisco"}
+        /><p class="description">
+          Helia Music Collective presents violinist <a
+            href="https://roberthuntsimonds.com/"
+            target="_blank">Robert Hunt Simonds</a
+          > for an evening of contemporary solo violin music by American composers
+          Missy Mazzoli, Cindy Cox, Patricia Van Ness, TJ Cole, Molly Joyce, Elizabeth
+          Kennedy Bayer, Alexis Bacon, as well as a new work by Helia co-founder,
+          <a href="https://www.emmalogan.com/" target="_blank">Emma Logan</a>.
+        </p>
+      </div>
+      <div>
+        <CardEvent
+          eventTitle={`Helia & Curium present "Color Through Music"`}
+          concertDate={"October 18, 2019, 8:00pm"}
+          venue={"Holy Names University"}
+          venueAddress={"3500 Mountain Boulevard"}
+          city={"Oakland"}
+        />
+        <CardEvent
+          eventTitle={``}
+          concertDate={"October 19, 2019, 8:00pm"}
+          venue={"Seventh Avenue Performances"}
+          venueAddress={"1329 7th Avenue"}
+          city={"San Francisco"}
+        /><p class="description">
+          Helia Music Collective and <a href="https://www.curiumtrio.com/" target="_blank">Curium Trio</a> present "Color Through Music,"
+          featuring new, recent, and lesser-known pieces for piano trio by women
+          composers, including three new premieres by Bay Area composers <a
+            href="https://emilyshisko.wordpress.com/"
+            target="_blank">Emily Shisko</a
+          >, <a href="https://www.juliebarwick.com/" target="_blank"
+            >Julie Barwick</a
+          >, and <a href="https://www.emmalogan.com/" target="_blank"
+            >Emma Logan</a
+          >.
+        </p>
+      </div>
+      <div>
+        <CardEvent
+          eventTitle={`10th Annual Hot Air Music Festival`}
+          concertDate={"March 17, 2019, 12:30pm"}
+          venue={"San Francisco Conservatory of Music"}
+          venueAddress={"50 Oak Street"}
+          city={"San Francisco"}
+        /><p class="description">
+          <a href="https://sirokoduo.com/" target="_blank">Siroko Duo</a> and Helia Music Collective revisit their Re:Ignite program
+          and will present selections of contemporary works for two flutes
+          written by women composers. Hot Air Music Festival is an all-day event
+          taking place at the San Francisco Conservatory of Music, featuring
+          music by up-and-coming composers and ensembles.
+        </p>
+      </div>
+      <div>
+        <CardEvent
+          eventTitle={`Tracking Series #3, Women Composers and Gender Equity`}
+          concertDate={"January 31, 2019, 7pm"}
+          venue={"Center for New Music"}
+          venueAddress={"55 Taylor Street"}
+          city={"San Francisco"}
+        /><p class="description">
+          The Center for New Music hosts its third Tracking Series, a series of
+          roundtable discussions on gender and racial equity in contemporary
+          music. On 1/31, the conversation focuses on women composers and gender
+          equity in contemporary music led by <a
+            href="https://www.emmalogan.com/"
+            target="_blank">Emma Logan</a
+          > and <a href="https://www.juliebarwick.com/" target="_blank"
+            >Julie Barwick</a
+          > of Helia Music Collective. Featured panelists include Elinor Armer, Pamela
+          Z, Aubrey Bergauer, Sarah Cahill, Mya Byrne, as well as many other voices
+          immeshed in the Bay Area contemporary music scene with proven dedication
+          to uplifting contemporary female voices.
+        </p>
+      </div>
+      <div>
+        <CardEvent
+          eventTitle={`Early Music Meets New - Helia Music Collective + Liaison Ensemble`}
+          concertDate={"​January 19, 2019, 7:30pm"}
+          venue={"Sunset Music and Arts - The Episcopal Church of the Incarnation"}
+          venueAddress={"1750 29th Avenue"}
+          city={"San Francisco"}
+        />
+        <CardEvent
+          eventTitle={``}
+          concertDate={"October 27, 2018, 8pm"}
+          venue={"Center for New Music"}
+          venueAddress={"55 Taylor Street"}
+          city={"San Francisco"}
+        /><p class="description">
+          Liaison Ensemble and Helia Music Collective team up to explore new
+          music by composers <a href="https://www.emilykoh.net/" target="_blank">Emily Koh</a>, <a href="https://chenlily.com/" target="_blank">Lily Chen</a>, <a
+            href="https://www.juliebarwick.com/"
+            target="_blank">Julie Barwick</a
+          >, and <a href="https://www.emmalogan.com/" target="_blank"
+            >Emma Logan</a
+          >
+          in response to music by Baroque composers Barbara Strozzi and Francesca
+          Caccini.
+        </p>
+      </div>
+      <div>
+        <CardEvent
+          eventTitle={"Re:Ignite - Helia Music Collective & Siroko Duo"}
+          concertDate={"March 25, 2017, 7:30pm"}
+          venue={"Center for New Music"}
+          venueAddress={"55 Taylor Street"}
+          city={"San Francisco"}
+        /><p class="description">
+          Helia Music Collective and <a href="https://sirokoduo.com/" target="_blank">Siroko Duo</a> present a program of
+          contemporary works by women composers for two flutes. The concert will
+          feature the world premiere of works by <a href="https://www.chelsealoew.com/" target="_blank"
+          >Chelsea Loew</a> and <a
+            href="https://www.emmalogan.com/"
+            target="_blank">Emma Logan</a
+          >, as well as recent works by J<a
+            href="https://www.juliebarwick.com/"
+            target="_blank">Julie Barwick</a
+          >, Shulamit Ran, Izabel Austin, <a href="https://janerigler.com/" target="_blank">Jane Rigler</a>, and <a
+          href="https://www.adjectivenewmusic.com/hudelson.html"
+          target="_blank">Brandy Hudelson</a>.
+        </p>
+      </div>
+      <div>
+        <CardEvent
+          eventTitle={"Vernon Salon Series"}
+          concertDate={"February 17, 2017, 8pm"}
+          venue={"Vernon Salon"}
+          venueAddress={"50 Oak Street"}
+          city={"Oakland"}
+        /><p class="description">
+          For the second Vernon Salon of 2017, flutist <a href="https://www.jessienucho.com/" target="_blank">Jessie Nucho</a> will be
+          performing two solos works by Kaija Saariaho and Eve Beglarian,
+          followed with talks by composer <a
+            href="https://www.emmalogan.com/"
+            target="_blank">Emma Logan</a
+          >, mixed media artist Victoria Welling, and writer Lindsay Merbaum on
+          women in the art world.
+        </p>
+      </div>
+
       <div class="image-events">
         <Image
           width={910}
@@ -48,6 +239,14 @@ const pageTitle = "Events";
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  a {
+    color: var(--accentDark);
+    text-decoration: none;
+    transition-duration: 300ms;
+  }
+  a:hover {
+    color: var(--accentLight);
   }
   .banner-title {
     width: 100vw;
@@ -70,5 +269,9 @@ const pageTitle = "Events";
   }
   .image-events {
     margin-bottom: 2rem;
+  }
+  .description {
+    max-width: 900px;
+    margin-bottom: 1.5rem;
   }
 </style>
