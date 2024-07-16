@@ -3,12 +3,9 @@ import Layout from "../layouts/Layout.astro";
 import YouTubeEmbed from "../components/YouTubeEmbed.astro";
 import Image from "astro/components/Image.astro";
 import WindowPhoto from "../components/WindowPhoto.astro";
-import heliaSun from "../images/web-flower.png";
 import headshotEmma from "../images/emma.jpg";
 import headshotJulie from "../images/about-julie.jpg";
 import emmaJuliePath from "../images/je-path.jpg";
-import emmaJulieStairs from "../images/je-stairs.jpg";
-import emmaJulieTree from "../images/je-tree.jpg";
 import emmaJulieSun from "../images/je-sun.jpg";
 ---
 
@@ -20,7 +17,7 @@ import emmaJulieSun from "../images/je-sun.jpg";
     <section class="section-one">
       <h2 class="media-section-titles">Videos</h2>
       <p>
-        Check out videos from our recent collaboration with <a
+        Check out videos from our recent collaboration with <a class="link"
           href="https://www.jeffanderle.com/"
           target="_blank">Jeff Anderle</a
         > and the SFCM Clarinet Ensemble:
@@ -45,7 +42,7 @@ import emmaJulieSun from "../images/je-sun.jpg";
       <hr />
 
       <p>
-        Recordings from our collaboration with cellist <a
+        Recordings from our collaboration with cellist <a class="link"
           href="https://www.natalieraneycello.com/"
           target="_blank">Natalie Raney</a
         >:
@@ -76,7 +73,7 @@ import emmaJulieSun from "../images/je-sun.jpg";
       <hr />
 
       <p>
-        Recordings from our collaboration and concert with <a
+        Recordings from our collaboration and concert with <a class="link"
           href="https://www.curiumtrio.com/"
           target="_blank">Curium Trio</a
         >:
@@ -129,7 +126,7 @@ import emmaJulieSun from "../images/je-sun.jpg";
       </div>
       <hr />
       <p>
-        Working with <a href="https://sirokoduo.com/" target="_blank"
+        Working with <a class="link" href="https://sirokoduo.com/" target="_blank"
           >Siroko Duo</a
         >
         in preparation for Re:Ignite concert:
@@ -173,25 +170,6 @@ import emmaJulieSun from "../images/je-sun.jpg";
           alt="Julie & Emma standing on a bridge with the sun rays shining up in the background"
           class="responsive-image"
         />
-        <Image
-          src={emmaJulieTree}
-          width={500}
-          alt="Emma sitting on branch of tree with Julie standing on the ground next to and below her"
-          class="responsive-image"
-        />
-        <div>
-          <Image
-            src={emmaJulieStairs}
-            width={500}
-            alt="Julie & Emma sitting on the stairs together, smiling"
-            class="responsive-image"
-          />
-          <Image
-            src={heliaSun}
-            alt="Helia Sun logo"
-            class="responsive-sun-image"
-          />
-        </div>
       </div>
     </section>
   </main>
@@ -239,6 +217,7 @@ import emmaJulieSun from "../images/je-sun.jpg";
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+    margin-bottom: 2rem;
   }
   .responsive-sun-image {
     width: 100%;
@@ -246,14 +225,6 @@ import emmaJulieSun from "../images/je-sun.jpg";
     object-fit: cover;
     padding: 1rem;
     transform: scale(0.65);
-  }
-  a {
-    color: var(--accentDark);
-    text-decoration: none;
-    transition-duration: 300ms;
-  }
-  a:hover {
-    color: var(--accentLight);
   }
 
   @media (max-width: 768px) {

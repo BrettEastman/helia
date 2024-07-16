@@ -22,7 +22,7 @@
   --primary90: #fcfcfc;
   --primary100: #ffffff;
   --accentLight: #e8bf4a;
-  --accentDark: #dea128;
+  --accentDark: #c48e22;
   --sun: #fdd016;
   --logoAccent: #a9dbc9;
   --logoAccentDark: #5b7b70;
@@ -38,7 +38,6 @@ html {
   height: 100%;
   font-size: 16px;
   background: var(--primary100);
-  /* background-size: 224px; */
 }
 
 body {
@@ -95,6 +94,16 @@ footer {
   text-align: center;
 }
 
+.link {
+  color: var(--accentDark);
+  text-decoration: none;
+  transition-duration: 300ms;
+}
+
+.link:hover {
+  color: var(--accentLight);
+}
+
 .socials {
   display: flex;
   justify-content: center;
@@ -124,6 +133,14 @@ footer {
   margin: 1rem 0;
 }
 
+.contact-subtitle {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding-top: 14px;
+  color: var(--primary10);
+}
+
 .media-section-titles {
   font-family: "Lato", sans-serif;
   font-size: 2rem;
@@ -148,10 +165,24 @@ footer {
   margin-bottom: 0.5rem;
 }
 
+.collaborators-subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--subtitleText);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
 .responsive-image {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+.caption {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--subtitleText);
 }
 
 html.dark {
@@ -168,6 +199,9 @@ html.dark {
 .dark .subtitle {
   color: var(--primary80);
   font-weight: 500;
+}
+.dark .contact-subtitle {
+  color: var(--primary80);
 }
 .dark .media-section-titles {
   color: var(--primary80);
@@ -187,6 +221,20 @@ html.dark {
 .dark .contact-title {
   color: var(--primary80);
   font-weight: 500;
+}
+.dark .caption {
+  color: var(--primary80);
+}
+.dark .collaborators-subtitle {
+  color: var(--primary80);
+  font-size: 1rem;
+  font-weight: 300;
+}
+.dark .link {
+  color: var(--accentLight);
+}
+.dark .link:hover {
+  color: var(--accentDark);
 }
 
 /* nav styles */

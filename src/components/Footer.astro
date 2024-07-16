@@ -15,18 +15,26 @@ const socials = [
       ))
     }
   </div>
-  <p id="copyright">© <span>Helia Music Collective</span></p>
+  <div class="footer-copyright">
+    <p id="copyright"></p>
+    <a class='link' href="/">Helia Music Collective</a>
+  </div>
 </footer>
 
 <script>
   const copyright = document.getElementById("copyright");
   if (copyright) {
-    copyright.innerHTML = `Copyright © ${new Date().getFullYear()} Helia Music Collective`;
+    copyright.innerHTML = `Copyright © ${new Date().getFullYear()}`;
   }
 </script>
 
 <style>
-  #copyright {
+  .footer-copyright {
+    display: flex;
+    justify-content: center;
     font-size: 0.8rem;
+  }
+  a {
+    padding-left: 0.5rem;
   }
 </style>
