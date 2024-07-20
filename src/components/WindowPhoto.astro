@@ -48,11 +48,9 @@ const { text } = Astro.props;
     font-family: "Lato", sans-serif;
     position: relative;
     z-index: 1;
-    max-width: var(--maxWidth);
-    padding-left: 10%;
-    padding-right: 10%;
+    max-width: 700px;
+    padding: 1rem 6rem;
     border-radius: 6px;
-    height: 169px;
   }
   h1 {
     width: 100%;
@@ -63,9 +61,10 @@ const { text } = Astro.props;
     .window-container {
       height: 250px;
       background-size: 160%;
+      background-attachment: scroll;
     }
     .foreground-content {
-      height: 119px;
+      padding: 1rem 1rem;
     }
     h1 {
       font-size: 2rem;
