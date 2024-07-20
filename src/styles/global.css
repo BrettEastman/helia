@@ -25,13 +25,14 @@
   --accentDark: #c48e22;
   --sun: #fdd016;
   --logoAccent: #a9dbc9;
-  --logoAccentDark: #5b7b70;
+  --logoAccentDark: #1d2824;
   --navText: #a5a5a5;
   --subtitleText: #333333;
   --icon: #b9b9b9;
   --titleBrown: #6c411e;
   --footerBackground: #f9f9f9;
   --heroBackground: #ced0d7;
+  --maxWidth: 900px;
 }
 
 html {
