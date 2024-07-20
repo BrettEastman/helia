@@ -22,19 +22,32 @@
     border: 0;
     background: none;
     cursor: pointer;
+    color: var(--sun);
+    transition: color 0.3s;
   }
-  .sun {
-    fill: var(--sun);
+
+  :global(.dark) #themeToggle {
+    color: var(--primary80);
   }
+
+  #themeToggle:hover {
+    color: var(--accentDark);
+  }
+
   .moon {
     fill: transparent;
   }
 
+  .sun {
+    fill: currentColor
+  }
+
+  :global(.dark) .moon {
+    fill: currentColor
+  }
+
   :global(.dark) .sun {
     fill: transparent;
-  }
-  :global(.dark) .moon {
-    fill: var(--primary70);
   }
 </style>
 

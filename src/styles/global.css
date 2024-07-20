@@ -259,6 +259,7 @@ html.dark {
   background-color: var(--logoAccent);
   color: var(--primary90);
 }
+
 .dark .nav-links a:hover,
 .dark .nav-links a:focus {
   background-color: var(--primary30);
