@@ -17,58 +17,58 @@ const { text } = Astro.props;
     position: relative;
   }
   .container {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-      overflow-x: hidden;
-      position: relative;
-      z-index: 1;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 1;
   }
   .window-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      height: 450px;
-      width: 100%;
-      overflow: hidden;
-      background-image: url("https://helia-20ac0.kxcdn.com/SF-ocean-beach-bg.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 450px;
+    width: 100%;
+    overflow: hidden;
+    background-image: url("https://helia-20ac0.kxcdn.com/SF-ocean-beach-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
   .foreground-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      color: var(--primary100);
-      background-color: rgba(169, 219, 201, 0.75);
-      font-family: "Lato", sans-serif;
-      position: relative;
-      z-index: 1;
-      max-width: 852px;
-      padding-left: 10%;
-      padding-right: 10%;
-      border-radius: 6px;
-      height: 169px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: var(--primary100);
+    background-color: rgba(169, 219, 201, 0.75);
+    font-family: "Lato", sans-serif;
+    position: relative;
+    z-index: 1;
+    max-width: 852px;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-radius: 6px;
+    height: 169px;
   }
   h1 {
-      width: 100%;
-      font-size: 3rem;
-      font-weight: 500;
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 500;
   }
   @media screen and (max-width: 768px) {
-      .window-container {
-          height: 250px;
-          background-size: 160%;
-      }
-      .foreground-content {
-          height: 119px;
-      }
-      h1 {
-          font-size: 2rem;
-      }
+    .window-container {
+      height: 250px;
+      background-size: 160%;
+    }
+    .foreground-content {
+      height: 119px;
+    }
+    h1 {
+      font-size: 2rem;
+    }
   }
 </style>

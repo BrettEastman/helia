@@ -6,7 +6,7 @@ import WindowPhoto from "../components/WindowPhoto.astro";
 ---
 
 <Layout title="Helia Music Collective">
-  <main>
+  <div class="main-format">
     <section class="banner-title">
       <WindowPhoto text="hēlē'a - of the sun" />
     </section>
@@ -26,17 +26,15 @@ import WindowPhoto from "../components/WindowPhoto.astro";
         />
       </div>
     </section>
-  </main>
+  </div>
 </Layout>
 
 <style>
-  main {
+  .main-format {
     display: flex;
     flex-direction: column;
-    width: 100vw;
   }
   .banner-title {
-    width: 100vw;
     position: relative;
     z-index: 1;
   }

@@ -10,7 +10,7 @@ const pageTitle = "About";
 ---
 
 <Layout title={pageTitle}>
-  <main>
+  <div class="main-format">
     <section>
       <Image
         src={aboutUs}
@@ -194,7 +194,8 @@ const pageTitle = "About";
         </li>
         <li>
           <a class="link" href="https://chenlily.com/" target="_blank"
-            >Lily Chen</a>
+            >Lily Chen</a
+          >
         </li>
         <li>
           <a class="link" href="https://www.emilykoh.net/" target="_blank"
@@ -251,7 +252,8 @@ const pageTitle = "About";
         </li>
         <li>
           <a class="link" href="https://sirokoduo.com/" target="_blank"
-            >Siroko Duo</a>
+            >Siroko Duo</a
+          >
         </li>
         <li>
           <a class="link" href="https://www.curiumtrio.com/" target="_blank"
@@ -272,7 +274,8 @@ const pageTitle = "About";
         </li>
         <li>
           <a class="link" href="https://ltingarts.com/" target="_blank"
-            >Ting Luo</a>
+            >Ting Luo</a
+          >
         </li>
       </ul>
       <h5 class="categories">Venues</h5>
@@ -318,35 +321,34 @@ const pageTitle = "About";
           >
         </li>
       </ul>
-      <main></main>
-
-      <style>
-        main {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: left;
-          max-width: 912px;
-          margin-bottom: 2rem;
-          margin: 0 2rem;
-          padding-bottom: 1rem;
-        }
-        .two-images {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 1rem;
-          padding-bottom: 2rem;
-        }
-        hr {
-          border: 1px solid var(--navText);
-        }
-
-        @media screen and (max-width: 636px) {
-          .two-images {
-            grid-template-columns: 1fr;
-          }
-        }
-      </style>
     </section>
-  </main></Layout
->
+  </div>
+</Layout>
+
+<style>
+  .main-format {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    max-width: 912px;
+    margin-bottom: 2rem;
+    margin: 0 2rem;
+    padding-bottom: 1rem;
+  }
+  .two-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding-bottom: 2rem;
+  }
+  hr {
+    border: 1px solid var(--navText);
+  }
+
+  @media screen and (max-width: 636px) {
+    .two-images {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
