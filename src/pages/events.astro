@@ -4,10 +4,12 @@ import CardEvent from "../components/CardEvent.astro";
 import { Image } from "astro:assets";
 import imageData from "../images/je-rocks.jpg";
 import WindowPhoto from "../components/WindowPhoto.astro";
+
 const pageTitle = "Events";
+const description = "Learn about upcoming and past events from Helia Music Collective's latest collaborations."
 ---
 
-<Layout title={pageTitle}>
+<Layout title={pageTitle} description={description}>
   <div class="main-format">
     <section class="banner-title">
       <WindowPhoto text="Events" />

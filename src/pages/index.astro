@@ -3,9 +3,12 @@ import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import julieEmmaPath from "../images/je-path.jpg";
 import WindowPhoto from "../components/WindowPhoto.astro";
+
+const pageTitle = "Home";
+const description = "Helia Music Collective supports the creative endeavors of women in music throughout the San Francisco Bay Area. Visit our website to learn more."
 ---
 
-<Layout title="Helia Music Collective">
+<Layout title={pageTitle} description={description}>
   <div class="main-format">
     <section class="banner-title">
       <WindowPhoto text="hēlē'a - of the sun" />

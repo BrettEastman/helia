@@ -2,9 +2,12 @@
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import imageData from "../images/je-stairs.jpg";
+
+const pageTitle = "Contact";
+const description = "Stay in touch with Helia Music Collective. Contact us, follow us on social media, and sign up for our mailing list.";
 ---
 
-<Layout title="Contact">
+<Layout title={pageTitle} description={description}>
   <div class="main-format">
     <Image
       src={imageData}

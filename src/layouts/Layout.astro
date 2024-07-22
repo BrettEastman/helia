@@ -7,9 +7,10 @@ import "@fontsource/lato";
 
 interface Props {
   title: string;
+  description?: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
@@ -18,12 +19,42 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="Helia is a New Music collective co-founded by Julie Barwick and Emma Logan"
+      content={description ||
+        "Helia is a New Music collective co-founded by Julie Barwick and Emma Logan"}
+    />
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://heliamusiccollective.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta
+      property="og:description"
+      content="Helia Music Collective supports the creative endeavors of women in music throughout the San Francisco Bay Area. Visit our website to learn more."
+    />
+    <meta
+      property="og:image"
+      content="../images/je-path.jpg"
+    />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="heliamusiccollective.com" />
+    <meta
+      property="twitter:url"
+      content="https://heliamusiccollective.com/"
+    />
+    <meta name="twitter:title" content="Home" />
+    <meta
+      name="twitter:description"
+      content="Helia Music Collective supports the creative endeavors of women in music throughout the San Francisco Bay Area. Visit our website to learn more."
+    />
+    <meta
+      name="twitter:image"
+      content="../images/je-path.jp"
     />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <title>{title} - Helia Music Collective</title>
   </head>
   <body>
     <div class="outer-screen">
