@@ -28,7 +28,7 @@ const { title, description } = Astro.props;
     <meta property="og:title" content={title} />
     <meta
       property="og:description"
-      content="Helia Music Collective supports the creative endeavors of women in music throughout the San Francisco Bay Area. Visit our website to learn more."
+      content={description || "Helia Music Collective supports the creative endeavors of women in music throughout the San Francisco Bay Area. Visit our website to learn more."}
     />
     <meta
       property="og:image"
@@ -42,10 +42,10 @@ const { title, description } = Astro.props;
       property="twitter:url"
       content="https://heliamusiccollective.com/"
     />
-    <meta name="twitter:title" content="Home" />
+    <meta name="twitter:title" content={title} />
     <meta
       name="twitter:description"
-      content="Helia Music Collective supports the creative endeavors of women in music throughout the San Francisco Bay Area. Visit our website to learn more."
+      content={description || "Helia Music Collective supports the creative endeavors of women in music throughout the San Francisco Bay Area. Visit our website to learn more."}
     />
     <meta
       name="twitter:image"
