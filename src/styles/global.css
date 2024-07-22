@@ -98,7 +98,7 @@ footer {
 .link {
   color: var(--accentDark);
   text-decoration: none;
-  transition-duration: 300ms;
+  transition: color 300ms;
 }
 
 .link:hover {
@@ -118,7 +118,7 @@ footer {
   text-decoration: none;
   border-radius: 6px;
   cursor: pointer;
-  transition-duration: 300ms;
+  transition: color 300ms;
 }
 
 .socials a:hover {
@@ -252,7 +252,7 @@ html.dark {
   text-decoration: none;
   font-size: 14px;
   text-transform: uppercase;
-  transition-duration: 300ms;
+  transition: color 300ms;
 }
 .nav-links a:hover,
 .nav-links a:focus {
