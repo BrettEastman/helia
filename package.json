@@ -16,7 +16,6 @@
     "astro": "^4.11.5",
     "astro-icon": "^1.1.0",
     "astro-lazy-youtube-embed": "^0.4.0",
-    "astro-robots-txt": "^1.0.0",
     "pnpm": "^9.4.0",
     "sharp": "^0.33.4",
     "typescript": "^5.5.3"
@@ -26,6 +25,7 @@
     "pnpm": "9.5.0"
   },
   "devDependencies": {
-    "@iconify-json/mdi": "^1.1.67"
+    "@iconify-json/mdi": "^1.1.67",
+    "astro-robots-txt": "^1.0.0"
   }
 }
